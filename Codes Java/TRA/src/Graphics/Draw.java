@@ -353,8 +353,7 @@ public final class Draw implements ActionListener, MouseListener, MouseMotionLis
 
 
     // create the menu bar (changed to private)
-    @SuppressWarnings("deprecation")
-	private JMenuBar createMenuBar() {
+    private JMenuBar createMenuBar() {
         JMenuBar menuBar = new JMenuBar();
         JMenu menu = new JMenu("File");
         menuBar.add(menu);

@@ -1,6 +1,5 @@
 package Delaunay;
 
-import Delaunay.Point;
 import Graphics.Draw;
 
 public class Triangle {

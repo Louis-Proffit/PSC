@@ -2,7 +2,6 @@ package Astar;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 
 import Global.PathFinder;
@@ -71,6 +70,7 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 	}
 	
 	//Algorithme de croisement de deux solutions pour faire évoluer la population
+	@SuppressWarnings("unchecked")
 	public ArrayList<Integer> croiser(ArrayList<Integer> route1, ArrayList<Integer> route2) {
 		ArrayList<Integer> new_route = (ArrayList<Integer>) route1.clone();
 		int split = (int) (numberOfCheckpoints * Math.random());

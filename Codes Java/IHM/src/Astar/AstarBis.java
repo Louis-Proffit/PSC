@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 import Global.Obstacle;
-import Global.PathFinder;
 
 public class AstarBis {
 	
