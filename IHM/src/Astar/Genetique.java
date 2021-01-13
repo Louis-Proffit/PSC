@@ -2,6 +2,7 @@ package Astar;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 
 import Global.PathFinder;
@@ -11,17 +12,17 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 	
 	int pop; //la taille des populations de solutions utilisées
 	int etapes; //le nombre d'étapes d'évolution effectué
-	int tailleSurvie = pop/5; //la partie de la population à partir de laquelle on va produire la génération suivante
-	int tailleElite = tailleSurvie/4; //"l'élite" de la population qu'on va conserver telle quelle à la génération suivante
+	int nombreElite; //"l'élite" de la population qu'on va conserver telle quelle à la génération suivante
 	
-	public Genetique(int p, int e) {
+	public Genetique(int p, int e, int elite) {
 		pop = p;
 		etapes = e;
+		nombreElite = elite;
 	}
 	
 	//Les points par lesquels il faut passer
-	static LinkedList<Tile> points = PathFinder.grid.checkpoints;
-	static int numberOfCheckpoints = points.size();
+	LinkedList<Tile> points = PathFinder.grid.checkpoints;
+	int numberOfCheckpoints = points.size();
 	
 	//La matrice des chemins entre points, qu'on calcule au fur et à mesure de l'algorithme
 	ArrayList<ArrayList<LinkedList<AstarTile>>> pathMatrix = new ArrayList<ArrayList<LinkedList<AstarTile>>>();
@@ -41,78 +42,82 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 	
 	@Override
 	public int compare(ArrayList<Integer> o1, ArrayList<Integer> o2) {
-		return (int) (score(o1) - score(o2));
+		return (int) (this.score(o1) - this.score(o2));
 	}
 	
 	//Le 'score' d'une solution au problème, c'est à dire la somme des coûts des chemins qui composent la solution
 	public double score(ArrayList<Integer> solution) {
 		double s = 0;
 		for(int i=0; i < numberOfCheckpoints - 1; i++) {
-			s += costMatrix.get(solution.get(i)).get(solution.get(i+1));
+			s += this.costMatrix.get(solution.get(i)).get(solution.get(i+1));
 		}
-		s += costMatrix.get(solution.get(numberOfCheckpoints - 1)).get(solution.get(0));
+		s += this.costMatrix.get(solution.get(numberOfCheckpoints - 1)).get(solution.get(0));
 		return(s);
 	}
 	
 	//Génération aléatoire d'une solution
-	public static ArrayList<Integer> createRoute() {
-		ArrayList<Integer> route = new ArrayList<Integer>(numberOfCheckpoints);
+	public ArrayList<Integer> createRoute() {
+		ArrayList<Integer> route = new ArrayList<Integer>();
 		for (int i=0; i<numberOfCheckpoints; i++) {
-			route.set(i,i);
+			route.add(i);
 		}
-		for (int i=numberOfCheckpoints; i>0; i--) {
+		for (int i=numberOfCheckpoints - 1; i>0; i--) {
 			int j = (int) (i*Math.random());
-			route.set(i, j);
-			route.set(j, i);
+			Integer a = route.get(i);
+			route.set(i, route.get(j));
+			route.set(j, a);
 		}
 		return(route);
 	}
 	
 	//Algorithme de croisement de deux solutions pour faire évoluer la population
 	public ArrayList<Integer> croiser(ArrayList<Integer> route1, ArrayList<Integer> route2) {
+		ArrayList<Integer> new_route = (ArrayList<Integer>) route1.clone();
 		int split = (int) (numberOfCheckpoints * Math.random());
-		int ajouts = 0;
+		ArrayList<Integer> partToChange = new ArrayList<Integer>();
 		for (int i = 0; i < numberOfCheckpoints; i++) {
 			if (route1.indexOf(route2.get(i)) >= split) {
-				route1.set(split+ajouts, route2.get(i));
-				ajouts++;
+				partToChange.add(i);
 			}
 		}
-		return(route1);
+		for (int k = 0; k < partToChange.size(); k++) {
+			new_route.set(split + k, route2.get(partToChange.get(k)));
+		}
+		return(new_route);
 	}
 	
 	//L'algorithme principal
 	public LinkedList<Tile> geneticPathFinder(){
 		
 		//Initialisation des matrices de chemins et de coûts
-		for (int i = 0 ; i < numberOfCheckpoints - 1; i++) {
+		for (int i = 0 ; i < numberOfCheckpoints; i++) {
 			costMatrix.add(new ArrayList<Double>());
 			pathMatrix.add(new ArrayList<LinkedList<AstarTile>>());
-			for (int j = 0 ; j < numberOfCheckpoints - 1; j++) {
-				//Pour l'instant aucun chemin n'a été calculé donc on initialise à null
-				pathMatrix.get(i).add(null); 
+			for (int j = 0 ; j < numberOfCheckpoints; j++) {
 				
-				//On initialise les coûts avec la distance à vol d'oiseau entre les points, qui est une sous-estimation du coût réel du chemin.
-				double cost = points.get(i).distanceToCase(points.get(j));
-				costMatrix.get(i).add(cost);
+				LinkedList<AstarTile> chemin = Astar.aStar(PathFinder.grid, new AstarTile(points.get(i)), new AstarTile(points.get(j)));
+				pathMatrix.get(i).add(chemin);
+				costMatrix.get(i).add(this.cost(chemin));
 			}
 		}
 		
+		
 		//Création de la population initiale de solutions
-		PriorityQueue<ArrayList<Integer>> population = new PriorityQueue<ArrayList<Integer>>();
+		PriorityQueue<ArrayList<Integer>> population = new PriorityQueue<ArrayList<Integer>>(1, (o1,o2) -> Double.compare(score(o1), score(o2)));
 		for (int i = 0; i < pop; i++) {
 			population.add(createRoute());
 		}
 		
 		//La liste dans laquelle on mettra notre 
-		PriorityQueue<ArrayList<Integer>> next_gen = new PriorityQueue<ArrayList<Integer>>();
+		PriorityQueue<ArrayList<Integer>> next_gen = new PriorityQueue<ArrayList<Integer>>(1, (o1,o2) -> Double.compare(score(o1), score(o2)));
+		
+		ArrayList<ArrayList<Integer>> mating_pool = new ArrayList<ArrayList<Integer>>();
 		
 		for (int e = 0; e < etapes; e++) {
-			for (int j = 0; j < tailleElite; j++) {
+			for (int j = 0; j < nombreElite ; j++) {
 				ArrayList<Integer> solution = population.poll();
-				next_gen.add(solution);
 				
-				for (int i = 0; i < numberOfCheckpoints - 1; i++) {
+				/*for (int i = 0; i < numberOfCheckpoints - 1; i++) {
 					if (pathMatrix.get(solution.get(i)).get(solution.get(i+1)) == null) {
 						LinkedList<AstarTile> chemin = Astar.aStar(PathFinder.grid, new AstarTile(points.get(solution.get(i))), new AstarTile(points.get(solution.get(i+1))));
 						costMatrix.get(solution.get(i)).set(solution.get(i+1), this.cost(chemin));
@@ -127,19 +132,22 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 					costMatrix.get(solution.get(numberOfCheckpoints - 1)).set(solution.get(0), this.cost(chemin));
 					pathMatrix.get(solution.get(0)).set(solution.get(numberOfCheckpoints - 1), chemin);
 					pathMatrix.get(solution.get(numberOfCheckpoints - 1)).set(solution.get(0), Astar.aStar(PathFinder.grid, new AstarTile(points.get(solution.get(numberOfCheckpoints - 1))), new AstarTile(points.get(solution.get(0)))));
-				}
+				}*/
+				
+				next_gen.add(solution);
+				mating_pool.add(solution);
+				
 			}
 			
-			ArrayList<ArrayList<Integer>> mating_pool = new ArrayList<ArrayList<Integer>>();
-			for (int i = 0; i < tailleSurvie - tailleElite; i++) {
+			while ( !(population.isEmpty())) {
 				mating_pool.add(population.poll());
 			}
 			
 			for (int j = 0; j < mating_pool.size() / 2; j++) {
-				ArrayList<Integer> solution = this.croiser(mating_pool.get(j), mating_pool.get(mating_pool.size() - j));
+				ArrayList<Integer> solution = this.croiser(mating_pool.get(j), mating_pool.get(mating_pool.size() - 1 - j));
 				next_gen.add(solution);
 				
-				for (int i = 0; i < numberOfCheckpoints - 1; i++) {
+				/*for (int i = 0; i < numberOfCheckpoints - 1; i++) {
 					if (pathMatrix.get(solution.get(i)).get(solution.get(i+1)) == null) {
 						LinkedList<AstarTile> chemin = Astar.aStar(PathFinder.grid, new AstarTile(points.get(solution.get(i))), new AstarTile(points.get(solution.get(i+1))));
 						costMatrix.get(solution.get(i)).set(solution.get(i+1), this.cost(chemin));
@@ -154,16 +162,31 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 					costMatrix.get(solution.get(numberOfCheckpoints - 1)).set(solution.get(0), this.cost(chemin));
 					pathMatrix.get(solution.get(0)).set(solution.get(numberOfCheckpoints - 1), chemin);
 					pathMatrix.get(solution.get(numberOfCheckpoints - 1)).set(solution.get(0), Astar.aStar(PathFinder.grid, new AstarTile(points.get(solution.get(numberOfCheckpoints - 1))), new AstarTile(points.get(solution.get(0)))));
-				}
+				}*/
 				
 			}
 			
-			population = next_gen;
+			population.clear();
+			for (ArrayList<Integer > element : next_gen) {
+				population.add(element);
+			}
+			
+			System.out.println(e);
+			while ( !(next_gen.isEmpty())) {
+				ArrayList<Integer> ex = next_gen.poll();
+				System.out.println(ex);
+				System.out.println(score(ex));
+			}
+			/*next_gen.clear();*/
+			
 
-			next_gen.clear();
+			mating_pool.clear();
 		}
 		
 		ArrayList<Integer> optimum = population.peek();
+		System.out.println(optimum);
+		System.out.println(score(optimum));
+		
 		LinkedList<Tile> chemin = new LinkedList<Tile>();
 		for (int i = 0; i < numberOfCheckpoints - 1; i++) {
 			for(AstarTile e : pathMatrix.get(optimum.get(i)).get(optimum.get(i+1))) {
@@ -174,7 +197,7 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 			chemin.addLast(e);
 		}
 		
-		return(chemin);
+		return(chemin);	
 	}
 }
 
