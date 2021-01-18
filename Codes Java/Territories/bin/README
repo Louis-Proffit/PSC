@@ -1,0 +1,30 @@
+
+
+	FICHIER EXECUTABLE : RandomWalkers.java
+			
+			Certains paramètres sont modificables notamment ceux affichés en début de classe
+			
+
+	CLASSES:
+		
+		Draw + DrawListener : classe pour afficher les résultats
+		
+		
+		Walker : désigne les éléments qui vont bouger. A chaque tour chacun marque son territoire pendant une certaine durée.
+		
+		
+		moveType : énumère les différents mouvements possibles
+		
+		
+		Map : simple classe qui désigne la carte sur laquelle évoluent les walkers.
+		
+		
+		Point : désigne un point, plus pratique et plus clair que double[] à chaque fois
+		
+		
+		ConvexHull : désigne le plus petit polygone convexe recouvrant tous un ensemble de points. Utilisé pour afficher régulièrement le territoire des walkers
+		
+		
+		RandomWalkers : contient le code exécutable
+	
+		
