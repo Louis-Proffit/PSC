@@ -14,7 +14,7 @@ public class RandomWalkers {
 	
 	static int numberOfWalkers = 25;
 	final static int activeScentTime = 500;				
-	final static int rounds = 500;
+	final static int rounds = 5000;
 	static int time = 0;
 	final static int mapSize = 100;
 	final static Map map = new Map(mapSize);
