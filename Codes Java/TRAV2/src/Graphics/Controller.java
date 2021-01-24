@@ -32,13 +32,9 @@ public class Controller {
 		points.add(new Point(7, 4));
 		points.add(new Point(8, 4));
 		points.add(new Point(7, 1));
-		points.add(new Point(2, 5));
-		points.add(new Point(8, 5));
-		points.add(new Point(6, 8));
 		obstacles.add(new Obstacle(new Point[] {points.get(0), points.get(1), points.get(2)}));
 		obstacles.add(new Obstacle(new Point[] {points.get(3), points.get(4), points.get(5), points.get(6)}));
 		obstacles.add(new Obstacle(new Point[] {points.get(7), points.get(8), points.get(9)}));
-		obstacles.add(new Obstacle(new Point[] {points.get(10), points.get(11), points.get(12)}));
 		draw.setXscale(0 - 0.05 * width, 1.05 * width);
 		draw.setYscale(0 - 0.05 * width, 1.05 * height);
 		DelaunayGenerator.delaunayGenerator();
@@ -77,8 +73,8 @@ public class Controller {
 	}
 	
 	public static void setLimitPoints() {
-		startPoint = new Point(1, 7);
-		endPoint = new Point(9, 1);
+		startPoint = new Point(1, 3);
+		endPoint = new Point(9, 2);
 	}
 	
 	public static void drawLimitPoints() {

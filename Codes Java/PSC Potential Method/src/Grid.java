@@ -118,6 +118,8 @@ public class Grid {
 		// Renvoie une couleur proportionelle à la hauteur du triangle
 		if (potentialGap == 0) return Color.GREEN;
 		double proportion = (potential1 + potential2 + potential3 - 3 * minPotential) / (3 * potentialGap);
+		if (proportion < 0) proportion = 0;
+		if (proportion > 1) proportion = 1;
 		return new Color((int)(255 *(1 - proportion)), (int)(255 * proportion), 0);
 	}
 	
