@@ -62,6 +62,14 @@ public class Path {
 			return 1 + this.next.size();
 		else return 1;
 	}
+	
+	public double length() {
+		if(this.element == null) return 0;
+		
+		if(this.hasNext()) 
+			return this.element.distanceToCase(this.next.element) + this.next.length();
+		else return 0;
+	}
 
 	public Tile getFirst() {
 		return this.element;

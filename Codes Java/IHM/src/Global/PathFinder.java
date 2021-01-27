@@ -8,6 +8,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 import Astar.AstarPathFinder;
+import Astar.Genetique;
 //import Draw.DrawInterface;
 import Graphics.LocalGraphics;
 
@@ -39,7 +40,7 @@ public class PathFinder {
 		long tStart = 0;
 		long tEnd = 0;
 		
-		initFromImage("C:\\Users\\louis\\OneDrive\\Bureau\\Java\\eclipse\\Path\\IHM\\src\\background1.jpg");
+		initFromImage("C:\\Users\\thiba\\PSC\\PSC\\Codes Java\\IHM\\src\\background1.jpg");
 		try { 
 			/* Boucle d'affichage */
 			while (localGraphics.frame.isActive()) {
@@ -79,7 +80,8 @@ public class PathFinder {
 	}
 	
 	public static Path pathFinder(Grid grid){
-		return new Path(AstarPathFinder.pathFinder(grid));
+		Genetique gen = new Genetique(50, 4, 5);
+		return new Path(gen.geneticPathFinder());
 	}
 	
 	public static void refreshPath() {
