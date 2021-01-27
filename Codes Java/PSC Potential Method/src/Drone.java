@@ -8,7 +8,7 @@ public class Drone {
 	public LinkedList<Point> trajectory;
 	public double proportionOfInertia = 0.3; // Le vecteur d'évoluion est une proportion du vecteur vitesse initial et du gradient
 	public double decreasingSpaceInfluence = 0.1;
-	public double potentialIncreasePerStep = 1;
+	public double potentialIncreasePerStep = 0.1;
 	
 	public Drone(double x, double y, double maxSpeedValue, double proportionOfInertia, Point initialDirection) {
 		this.position = new Point(x, y);
