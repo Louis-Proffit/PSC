@@ -153,8 +153,10 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 	}
 	
 	
-public ArrayList<Integer> genetiqueSimplifie(){
-		
+public ArrayList<Integer> genetiqueSimplifie(LinkedList<Tile> checkpoints){
+		points = checkpoints;
+		numberOfCheckpoints = points.size();
+
 		//Initialisation des matrices de coûts
 		for (int i = 0 ; i < numberOfCheckpoints; i++) {
 			costMatrix.add(new ArrayList<Double>());
