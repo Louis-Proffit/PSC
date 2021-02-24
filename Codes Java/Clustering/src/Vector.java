@@ -42,4 +42,8 @@ public class Vector {
         return new Vector(this.x * mult, this.y * mult);
     }
 
+    public Vector copy(Vector vector) {
+        return new Vector(vector.y, vector.x);
+    }
+
 }

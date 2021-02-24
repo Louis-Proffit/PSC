@@ -125,7 +125,7 @@ public class ClusteringTree implements ClusteringAlgorithm {
         int ymin = -1;
         for (int i = 0; i < distances.length; i++) {
             for (int j = 0; j < i; j++) {
-                if (distances[i][j] * (1 + weights[i]) * (1 + weights[j]) < min & classes[i] == i & classes[j] == j) {
+                if (distances[i][j] * weights[i] * weights[j] < min & classes[i] == i & classes[j] == j) {
                     min = distances[i][j] * weights[i] * weights[j];
                     xmin = i;
                     ymin = j;

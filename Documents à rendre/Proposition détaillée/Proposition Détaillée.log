@@ -1,0 +1,450 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.22)  24 FEB 2021 15:35
+entering extended mode
+**"c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/Proposition Détaillée.tex"
+("c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/Proposition Détaillée.tex"
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-09-03> ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo"
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count176
+\Gm@cntv=\count177
+\c@Gm@tempcnt=\count178
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks18
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg")) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty"
+Package: babel 2020/09/01 3.48 The Babel package
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def"
+File: babel.def 2020/09/01 3.48 Babel common definitions
+\babel@savecnt=\count179
+\U@D=\dimen143
+\l@babelnohyphens=\language79
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def")
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count180
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\frenchb.ldf"
+Language: frenchb 2020/10/10 v3.5l French support from the babel system
+
+
+Package babel-french Warning: Option `frenchb' for Babel is *deprecated*,
+(babel-french)                it might be removed sooner or later. Please
+(babel-french)                use `french' instead; reported on input line 35.
+
+("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.ldf"
+Language: french 2020/10/10 v3.5l French support from the babel system
+Package babel Info: \l@acadian = using hyphenrules for french
+(babel)             (\language22) on input line 91.
+Package babel Info: \l@canadien = using hyphenrules for french
+(babel)             (\language22) on input line 92.
+\FB@nonchar=\count181
+Package babel Info: Making : an active character on input line 430.
+Package babel Info: Making ; an active character on input line 431.
+Package babel Info: Making ! an active character on input line 432.
+Package babel Info: Making ? an active character on input line 433.
+\FBguill@level=\count182
+\FBold@everypar=\toks19
+\FB@Mht=\dimen144
+\mc@charclass=\count183
+\mc@charfam=\count184
+\mc@charslot=\count185
+\std@mcc=\count186
+\dec@mcc=\count187
+\listindentFB=\dimen145
+\descindentFB=\dimen146
+\labelindentFB=\dimen147
+\labelwidthFB=\dimen148
+\leftmarginFB=\dimen149
+\parindentFFN=\dimen150
+\FBfnindent=\dimen151
+))) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty") ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/libertine\libertine.sty"
+Package: libertine 2020/03/26 (Bob Tennent) Supports Libertine and Biolinum fonts for all LaTeX engines.
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty"
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty"
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex" ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count188
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty"
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty"
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+LaTeX Info: Redefining \oldstylenums on input line 484.
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/libertine\LinLibertine_I.tex")) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count189
+\l__pdf_internal_box=\box45
+)
+
+LaTeX Warning: Unused global option(s):
+    [openany].
+
+("c:/Users\Louis Proffit\OneDrive\Git\PSC\Documents à rendre\Proposition détaillée\Proposition Détaillée.aux")
+\openout1 = `"Proposition Détaillée.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineT-TLF on input line 17.
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxlibertinet-tlf.fd"
+File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 17.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \degres on input line 17.
+LaTeX Info: Redefining \dots on input line 17.
+LaTeX Info: Redefining \up on input line 17.
+\c@mv@tabular=\count190
+\c@mv@boldtabular=\count191
+("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count192
+\scratchdimen=\dimen154
+\scratchbox=\box46
+\nofMPsegments=\count193
+\nofMParguments=\count194
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count195
+\MPscratchDim=\dimen155
+\MPnumerator=\count196
+\makeMPintoPDFobject=\count197
+\everyMPtoPDFconversion=\toks23
+) ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+)
+LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 20.
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxbiolinumt-tlf.fd"
+File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 20.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 23.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/sc' will be
+(Font)              scaled to size 20.74pt on input line 23.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/sc' will be
+(Font)              scaled to size 17.28pt on input line 25.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 24.88pt on input line 29.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 24.88pt on input line 29.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 35.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/sc' will be
+(Font)              scaled to size 14.4pt on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 42.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/scit' will be
+(Font)              scaled to size 14.4pt on input line 50.
+
+
+c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/Proposition Détaillée.tex:50: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50         M. Emmanuel Haucourt \\}
+                                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+
+{C:/Users/Louis Proffit/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 62.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 62.
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 75.
+ ("C:\Users\Louis Proffit\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxlibertinet-tlf.fd"
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 75.
+ [1] [2]
+Overfull \hbox (1.31053pt too wide) in paragraph at lines 81--81
+[]\T1/LinuxLibertineT-TLF/b/n/17.28 Revue et ana-lyse de l'�tat de l'art / des ap-proches concur-
+ []
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 84.
+
+LaTeX Warning: Citation `1' on page 3 undefined on input line 84.
+
+
+LaTeX Warning: Citation `2' on page 3 undefined on input line 86.
+
+
+LaTeX Warning: Citation `3' on page 3 undefined on input line 88.
+
+
+LaTeX Warning: Citation `4' on page 3 undefined on input line 90.
+
+
+LaTeX Warning: Reference `fig1' on page 3 undefined on input line 90.
+
+
+LaTeX Warning: Reference `fig1' on page 3 undefined on input line 90.
+
+
+LaTeX Warning: Citation `4' on page 3 undefined on input line 92.
+
+
+LaTeX Warning: Citation `5' on page 3 undefined on input line 92.
+
+[3]
+
+c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/Proposition Détaillée.tex:96: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96     \centering
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<Schéma réseau de drones état de l'art proposition détaillée.jpg, id=20, 591.71063pt x 192.21812pt>
+File: Schéma réseau de drones état de l'art proposition détaillée.jpg Graphic file (type jpg)
+<use Schéma réseau de drones état de l'art proposition détaillée.jpg>
+Package pdftex.def Info: Schéma réseau de drones état de l'art proposition détaillée.jpg  used on input line 97.
+(pdftex.def)             Requested size: 414.19461pt x 134.55176pt.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 98.
+
+c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/Proposition Détaillée.tex:100: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100     \vspace{1cm}\\
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/Proposition Détaillée.tex:105: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105     \centering
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<interception bulle 1.JPG, id=21, 271.51437pt x 138.5175pt>
+File: interception bulle 1.JPG Graphic file (type jpg)
+<use interception bulle 1.JPG>
+Package pdftex.def Info: interception bulle 1.JPG  used on input line 106.
+(pdftex.def)             Requested size: 271.51369pt x 138.51715pt.
+<interception bulle 2.JPG, id=22, 273.02pt x 134.00063pt>
+File: interception bulle 2.JPG Graphic file (type jpg)
+<use interception bulle 2.JPG>
+Package pdftex.def Info: interception bulle 2.JPG  used on input line 107.
+(pdftex.def)             Requested size: 273.01933pt x 134.00027pt.
+
+c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/Proposition Détaillée.tex:109: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109     \vspace{1cm}\\
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[4
+
+ <c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/Schéma réseau de drones état de l'art proposition détaillée.jpg> <c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/interception bulle 1.JPG> <c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/interception bulle 2.JPG>] [5] [6]
+Overfull \hbox (6.03972pt too wide) in paragraph at lines 202--203
+[]\T1/LinuxLibertineT-TLF/m/n/12 Notre PSC ne n�-c�s-site pas de ma-t�-riel par-ti-cu-lier si ce n'est des or-di-na-teurs et quelques
+ []
+
+[7]
+c:/Users/Louis Proffit/OneDrive/Git/PSC/Documents à rendre/Proposition détaillée/Proposition Détaillée.tex:212: Misplaced alignment tab character &.
+l.212 Nedjah, N. &
+                   De Macedo Mourelle,L. Swarm Intelligent Systems. Studies ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 221.
+
+LaTeX Warning: Citation `4' on page 8 undefined on input line 221.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
+[]\T1/LinuxLibertineT-TLF/m/n/12 Stuart Rus-sel. Slaugh-ter-bots. Vi-d�o fic-tive mon-trant des d�-rives pos-sibles
+ []
+
+
+Underfull \hbox (badness 6173) in paragraph at lines 224--228
+\T1/LinuxLibertineT-TLF/m/n/12 dans un fu-tur proche, uni-ver-sit� de Ber-ke-ley, No-vembre 2017. Dis-po-nible sur
+ []
+
+[8] ("c:/Users\Louis Proffit\OneDrive\Git\PSC\Documents à rendre\Proposition détaillée\Proposition Détaillée.aux")
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4673 strings out of 481199
+ 79526 string characters out of 2901809
+ 328543 words of memory out of 3000000
+ 20202 multiletter control sequences out of 15000+200000
+ 610768 words of font info for 66 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,6n,35p,1134b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_jtta5h.enc}{C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_omcwp2.enc}<C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTI.pfb><C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/Louis Proffit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "c:/Users\Louis Proffit\OneDrive\Git\PSC\Documents à rendre\Proposition détaillée\Proposition Détaillée.pdf" (9 pages, 555560 bytes).
+PDF statistics:
+ 75 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+
