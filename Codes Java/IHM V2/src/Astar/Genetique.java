@@ -151,6 +151,58 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 		
 		return(chemin);	
 	}
+	
+	
+public ArrayList<Integer> genetiqueSimplifie(){
+		
+		//Initialisation des matrices de coûts
+		for (int i = 0 ; i < numberOfCheckpoints; i++) {
+			costMatrix.add(new ArrayList<Double>());
+			for (int j = 0 ; j < numberOfCheckpoints; j++) {
+				costMatrix.get(i).add(points.get(i).distanceToCase(points.get(j)));
+			}
+		}
+		
+		
+		//Création de la population initiale de solutions
+		PriorityQueue<ArrayList<Integer>> population = new PriorityQueue<ArrayList<Integer>>(1, (o1,o2) -> Double.compare(score(o1), score(o2)));
+		for (int i = 0; i < pop; i++) {
+			population.add(createRoute());
+		}
+		
+		//La liste dans laquelle on mettra notre 
+		PriorityQueue<ArrayList<Integer>> next_gen = new PriorityQueue<ArrayList<Integer>>(1, (o1,o2) -> Double.compare(score(o1), score(o2)));
+		
+		ArrayList<ArrayList<Integer>> mating_pool = new ArrayList<ArrayList<Integer>>();
+		
+		for (int e = 0; e < etapes; e++) {
+			for (int j = 0; j < nombreElite ; j++) {
+				ArrayList<Integer> solution = population.poll();				
+				next_gen.add(solution);
+				mating_pool.add(solution);
+			}
+			
+			while ( !(population.isEmpty())) {
+				mating_pool.add(population.poll());
+			}
+			
+			for (int j = 0; j < mating_pool.size() / 2; j++) {
+				ArrayList<Integer> solution = this.croiser(mating_pool.get(j), mating_pool.get(mating_pool.size() - 1 - j));
+				next_gen.add(solution);				
+			}
+			
+			population.clear();
+			for (ArrayList<Integer > element : next_gen) {
+				population.add(element);
+			}
+			
+			next_gen.clear();
+			mating_pool.clear();
+		}
+		
+		ArrayList<Integer> optimum = population.peek();
+		return(optimum);
+	}
 }
 
 
