@@ -23,10 +23,10 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 	LinkedList<? extends Tile> points = PathFinder.grid.checkpoints;
 	int numberOfCheckpoints = points.size();
 	
-	//La matrice des chemins entre points, qu'on calcule au fur et à mesure de l'algorithme
+	//La matrice des chemins entre points
 	ArrayList<ArrayList<LinkedList<AstarTile>>> pathMatrix = new ArrayList<ArrayList<LinkedList<AstarTile>>>();
 	
-	//La matrice des coûts, estimés ou réels, de ces chemins 
+	//La matrice des coûts réels de ces chemins 
 	ArrayList<ArrayList<Double>> costMatrix = new ArrayList<ArrayList<Double>>();
 
 	//Le coût d'un chemin entre deux points
