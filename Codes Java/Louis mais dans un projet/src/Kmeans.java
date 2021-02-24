@@ -1,39 +1,7 @@
 import java.awt.Color;
+import java.util.ArrayList;
 
 public class Kmeans {
-
-    public static double[] getBounds(Checkpoint[] checkpoints) {
-        // Format : [xmin, xmax, ymin, ymax]
-        double xmin = 0;
-        double ymin = 0;
-        double xmax = 0;
-        double ymax = 0;
-        for (Checkpoint checkpoint : checkpoints) {
-            if (checkpoint.getX() < xmin)
-                xmin = checkpoint.getX();
-            if (checkpoint.getY() < ymin)
-                ymin = checkpoint.getY();
-            if (checkpoint.getX() > xmax)
-                xmax = checkpoint.getX();
-            if (checkpoint.getY() > xmax)
-                ymax = checkpoint.getY();
-        }
-        return new double[] { xmin, xmax, ymin, ymax };
-    }
-
-    public static Cluster[] generateRandomRepartition(Checkpoint[] checkpoints, int numberOfClusters) {
-        /* La méthode rend une liste de clusters. */
-        int size = checkpoints.length;
-        Cluster[] clusters = new Cluster[numberOfClusters];
-        for (int i = 0; i < numberOfClusters; i++)
-            clusters[i] = new Cluster();
-        int index;
-        for (int i = 0; i < size; i++) {
-            index = (int) (Math.random() * numberOfClusters);
-            clusters[index].addCheckpoint(checkpoints[i]);
-        }
-        return clusters;
-    }
 
     public static double getRepartitionScore(Cluster[] clusters) {
         double score = 0;
@@ -44,20 +12,66 @@ public class Kmeans {
     }
 
     public static Cluster[] KMean(Checkpoint[] checkpoints, int numberOfClusters){
-        int numberOfPasses = 1000;
-        Cluster[] solutionRepartition = null;
-        Cluster[] currentRepartition;
-        double solutionScore = 0;
-        double currentScore;
-        for (int i = 0 ; i < numberOfPasses ; i++){
-            currentRepartition = generateRandomRepartition(checkpoints, numberOfClusters);
-            currentScore = getRepartitionScore(currentRepartition);
-            if (currentScore < solutionScore | i == 0){
-                solutionScore = currentScore;
-                solutionRepartition = currentRepartition;
-            }
+    	boolean hasChanged = true;    	
+    	Cluster[] clusters = new Cluster[numberOfClusters];
+    	int numberOfCheckpoints = checkpoints.length;
+    	ArrayList<Integer> whichCluster = new ArrayList<Integer>();
+    	for (int i = 0; i < numberOfCheckpoints; i++) {
+    		whichCluster.add(-1);
+    	}
+    	
+    	int i = 0;
+    	while (i < numberOfClusters) {
+    		clusters[i] = new Cluster();
+    		int j = (int) (Math.random() * numberOfCheckpoints);
+    		if (whichCluster.get(j) == -1) { 
+    			clusters[i].addCheckpoint(checkpoints[j]); 
+    			whichCluster.set(j, i);
+    			i++;
+    		}
+    	}
+    	
+    	for (int j = 0; j < numberOfCheckpoints; j++) {
+    		double min = 10000;
+    		int destination = -1;
+    		for (int k = 0; k < numberOfClusters; k++) {
+    			double dist = checkpoints[j].distance(clusters[k].mean());
+    			if (dist < min) {
+    				min = dist;
+    				destination = k;
+    			}
+    		}
+    		
+    		if (whichCluster.get(j) == -1) {
+    			clusters[destination].addCheckpoint(checkpoints[j]); 
+    			whichCluster.set(j, destination);
+    		}
+    	} 	
+    	    	
+    	while (hasChanged) {
+    		hasChanged = false;    		
+    		
+    		for (int j = 0; j < numberOfCheckpoints; j++) {
+        		double min = 10000;
+        		int destination = -1;
+        		for (int k = 0; k < numberOfClusters; k++) {
+        			double dist = checkpoints[j].distance(clusters[k].mean());
+        			if (dist < min) {
+        				min = dist;
+        				destination = k;
+        			}
+        		}
+        		
+        		if (whichCluster.get(j) != destination) {
+        			hasChanged = true;
+        			clusters[destination].addCheckpoint(checkpoints[j]);
+        			clusters[whichCluster.get(j)].getInnerCheckpoints().remove((Object) checkpoints[j]);
+        			whichCluster.set(j, destination);
+        		}
+        	} 	
         }
-        return solutionRepartition;
+    	
+        return clusters;
     }
 
     public static void showResultsPolygons(Cluster[] clusters){
