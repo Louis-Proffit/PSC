@@ -1,20 +1,27 @@
 import java.util.Random;
 
-public class RandomGenerator {
+public class CheckpointGenerator {
 
     public static Random random = new Random();
 
-    public static Checkpoint[] generateCheckpointsFromBlocks(int numberOfClusters, int numberOfBlocks,
+    public static Checkpoint[] generateCheckpointsFromBlocks(int numberOfCheckpoints, int numberOfBlocks,
             double variance) {
         Checkpoint[] blocks = new Checkpoint[numberOfBlocks];
-        Checkpoint[] result = new Checkpoint[numberOfClusters];
+        Checkpoint[] result = new Checkpoint[numberOfCheckpoints];
         for (int i = 0; i < numberOfBlocks; i++)
             blocks[i] = generateRandomCheckpoint();
-        for (int i = 0; i < numberOfClusters; i++) {
+        for (int i = 0; i < numberOfCheckpoints; i++) {
             int blockIndex = i % numberOfBlocks;
             result[i] = generateRandomCheckpointFromBlockGaussian(blocks[blockIndex], variance);
         }
         return result;
+    }
+
+    public static Checkpoint[] generateCheckpoints(int numberOfCheckpoints) {
+        Checkpoint[] checkpoints = new Checkpoint[numberOfCheckpoints];
+        for (int i = 0; i < numberOfCheckpoints; i++)
+            checkpoints[i] = generateRandomCheckpoint();
+        return checkpoints;
     }
 
     public static Checkpoint generateRandomCheckpoint() {

@@ -1,24 +1,27 @@
-import java.util.LinkedList;
-import java.util.PriorityQueue;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
+import java.util.PriorityQueue;
 
-public class Genetique implements Comparator<ArrayList<Integer>> {
+public class Genetique implements Comparator<ArrayList<Integer>>, TSPSolver {
 
-	private final int pop; // la taille des populations de solutions utilis�es
-	private final int etapes; // le nombre d'�tapes d'�volution effectu�
-	private final int nombreElite; // "l'�lite" de la population qu'on va conserver telle quelle � la g�n�ration
-									// suivante
+	private final int populationSize; // la taille des populations de solutions utilis�es
+	private final int numberOfSteps; // le nombre d'�tapes d'�volution effectu�
+	private final int numberOfElites; // "l'�lite" de la population qu'on va conserver telle quelle � la g�n�ration
+										// suivante
 
-	public Genetique(int p, int e, int elite) {
-		pop = p;
-		etapes = e;
-		nombreElite = elite;
+	/**
+	 * Construit un solver de génétique
+	 * 
+	 * @param population : population initiale
+	 * @param etapes     : nombre d'étapes de reproduction
+	 * @param elite      : nombre de meilleurs éléments que l'on garde
+	 */
+	public Genetique(int populationSize, int numberOfSteps, int numberOfElites) {
+		this.populationSize = populationSize;
+		this.numberOfSteps = numberOfSteps;
+		this.numberOfElites = numberOfElites;
 	}
-
-	// Les points par lesquels il faut passer
-	LinkedList<? extends Vector> points;
-	int numberOfCheckpoints = points.size();
 
 	// La matrice des co�ts r�els de ces chemins
 	ArrayList<ArrayList<Double>> costMatrix = new ArrayList<ArrayList<Double>>();
@@ -32,6 +35,7 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 	// chemins qui composent la solution
 	public double score(ArrayList<Integer> solution) {
 		double s = 0;
+		int numberOfCheckpoints = solution.size();
 		for (int i = 0; i < numberOfCheckpoints - 1; i++) {
 			s += this.costMatrix.get(solution.get(i)).get(solution.get(i + 1));
 		}
@@ -40,7 +44,7 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 	}
 
 	// G�n�ration al�atoire d'une solution
-	public ArrayList<Integer> createRoute() {
+	public ArrayList<Integer> createRoute(int numberOfCheckpoints) {
 		ArrayList<Integer> route = new ArrayList<Integer>();
 		for (int i = 0; i < numberOfCheckpoints; i++) {
 			route.add(i);
@@ -55,8 +59,8 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 	}
 
 	// Algorithme de croisement de deux solutions pour faire �voluer la population
-	@SuppressWarnings("unchecked")
 	public ArrayList<Integer> croiser(ArrayList<Integer> route1, ArrayList<Integer> route2) {
+		int numberOfCheckpoints = route1.size();
 		ArrayList<Integer> new_route = (ArrayList<Integer>) route1.clone();
 		int split = (int) (numberOfCheckpoints * Math.random());
 		ArrayList<Integer> partToChange = new ArrayList<Integer>();
@@ -71,8 +75,8 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 		return (new_route);
 	}
 
-	public ArrayList<Integer> genetiqueSimplifie(LinkedList<Vector> points) {
-		numberOfCheckpoints = points.size();
+	public List<Integer> getPath(List<? extends Vector> points) {
+		int numberOfCheckpoints = points.size();
 
 		// Initialisation des matrices de co�ts
 		for (int i = 0; i < numberOfCheckpoints; i++) {
@@ -85,8 +89,8 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 		// Cr�ation de la population initiale de solutions
 		PriorityQueue<ArrayList<Integer>> population = new PriorityQueue<ArrayList<Integer>>(1,
 				(o1, o2) -> Double.compare(score(o1), score(o2)));
-		for (int i = 0; i < pop; i++) {
-			population.add(createRoute());
+		for (int i = 0; i < populationSize; i++) {
+			population.add(createRoute(numberOfCheckpoints));
 		}
 
 		// La liste dans laquelle on mettra notre
@@ -95,8 +99,8 @@ public class Genetique implements Comparator<ArrayList<Integer>> {
 
 		ArrayList<ArrayList<Integer>> mating_pool = new ArrayList<ArrayList<Integer>>();
 
-		for (int e = 0; e < etapes; e++) {
-			for (int j = 0; j < nombreElite; j++) {
+		for (int e = 0; e < numberOfSteps; e++) {
+			for (int j = 0; j < numberOfElites; j++) {
 				ArrayList<Integer> solution = population.poll();
 				next_gen.add(solution);
 				mating_pool.add(solution);
