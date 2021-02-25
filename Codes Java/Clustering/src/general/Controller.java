@@ -41,7 +41,7 @@ public class Controller {
     /**
      * Nombre de clusters générés
      */
-    private static int numberOfClusters = 1;
+    private static int numberOfDrones = 8;
 
     /**
      * Classe utilisée pour la génération des checkpoints
@@ -74,7 +74,7 @@ public class Controller {
                     .getConstructor();
             ClusteringSolver clusteringAlgorithm = clusteringSolverConstructor.newInstance(); // Constructeur sans
                                                                                               // argument
-            Cluster[] clusters = clusteringAlgorithm.getClusters(checkpoints, numberOfClusters);
+            Cluster[] clusters = clusteringAlgorithm.getClusters(checkpoints, numberOfDrones);
 
             /* Création des chemins */
             Constructor<? extends TSPSolver> tspSolverConstructor = tspSolverClass.getConstructor();
@@ -82,8 +82,13 @@ public class Controller {
             for (Cluster cluster : clusters)
                 cluster.setPath(tspSolver);
 
+            Drone[] drones = new Drone[numberOfDrones];
+            Arrays.setAll(drones, i -> new Drone());
+            DroneClusterAttribution droneClusterAttribution = new DroneClusterAttribution();
+            droneClusterAttribution.attribute(drones, clusters);
+
             /* Affichage du résultat */
-            Graphics.showResult(clusters);
+            Graphics.showResult(drones);
         } catch (NoSuchMethodException | SecurityException e) {
             e.printStackTrace();
             System.out.println("Le constructeur n'existe pas");

@@ -144,7 +144,7 @@ public class TSPRecuit implements TSPSolver {
 	 * @return La nouvelle proposition de chemin.
 	 */
 	@SuppressWarnings("unused")
-	private static Checkpoint[] proposition1(Checkpoint[] currentSolution) {
+	private Checkpoint[] proposition1(Checkpoint[] currentSolution) {
 		int numberOfPoints = currentSolution.length;
 		Checkpoint[] proposition = new Checkpoint[numberOfPoints];
 		for (int i = 0; i < numberOfPoints; i++) {
@@ -169,7 +169,7 @@ public class TSPRecuit implements TSPSolver {
 	 * @return Le nouveau chemin.
 	 */
 	@SuppressWarnings("unused")
-	private static Checkpoint[] proposition2(Checkpoint[] currentSolution) {
+	private Checkpoint[] proposition2(Checkpoint[] currentSolution) {
 		int numberOfPoints = currentSolution.length;
 		int firstIndex = (int) (Math.random() * numberOfPoints);
 		int secondIndex = (int) (Math.random() * numberOfPoints);
@@ -209,7 +209,7 @@ public class TSPRecuit implements TSPSolver {
 	 * @param points : L'array à copier
 	 * @return L'array copié
 	 */
-	private static Checkpoint[] copy(Checkpoint[] points) {
+	private Checkpoint[] copy(Checkpoint[] points) {
 		Checkpoint[] result = new Checkpoint[points.length];
 		Arrays.setAll(result, i -> points[i]);
 		return result;

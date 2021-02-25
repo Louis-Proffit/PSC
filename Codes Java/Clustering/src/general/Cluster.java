@@ -115,6 +115,11 @@ public class Cluster {
      * mean.getY(), 2); } return variance; }
      */
 
+    /**
+     * Computes the mean of positions of checkpoints in the cluster
+     * 
+     * @return The mean position of the checkpoints in the cluster
+     */
     public Vector getMean() {
         double x = 0;
         double y = 0;
@@ -125,5 +130,21 @@ public class Cluster {
         x = x / innerCheckpoints.size();
         y = y / innerCheckpoints.size();
         return new Vector(x, y);
+    }
+
+    public DistanceToCluster distanceToCluster(Vector vector) {
+        if (innerCheckpoints.isEmpty())
+            return new DistanceToCluster(100, null); // TODO
+        double minDistanceToCluster = 2;
+        Checkpoint closestCheckpoint = null;
+        double distanceToCheckpoint;
+        for (Checkpoint checkpoint : innerCheckpoints) {
+            distanceToCheckpoint = checkpoint.distance(vector);
+            if (distanceToCheckpoint < minDistanceToCluster) {
+                minDistanceToCluster = distanceToCheckpoint;
+                closestCheckpoint = checkpoint;
+            }
+        }
+        return new DistanceToCluster(minDistanceToCluster, closestCheckpoint);
     }
 }
