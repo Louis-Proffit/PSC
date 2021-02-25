@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.dependency.syncWithFolderExplorer": false,
+		"java.format.settings.url": "eclipse-formatter.xml"
+	}
+}
