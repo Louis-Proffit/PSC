@@ -1,24 +1,26 @@
 package structure;
 
 /**
- * Classe décrivant un point/vecteur par ses coordonnées cartésiennes
+ * Classe décrivant un vecteur (immodifiable)
  * 
+ * @LouisProffitX
  * @author Louis Proffit
+ * @version 1.0
  */
 public class Vector {
 
     /**
-     * Abscisse du point
+     * La coordonnée x du vecteur
      */
-    private double x;
+    public double x;
 
     /**
-     * Coordonnées du point
+     * La coordonnée y du vecteur
      */
-    private double y;
+    public double y;
 
     /**
-     * Constructeur générant un point aléatoire dans le cadre
+     * Constructeur simple d'un point aléatoire dans le cadre
      */
     public Vector() {
         this.x = Math.random();
@@ -28,8 +30,8 @@ public class Vector {
     /**
      * Constructeur simple
      * 
-     * @param x : L'abscisse du vecteur
-     * @param y : L'ordonnée du vecteur
+     * @param x : l'abscisse du vecteur
+     * @param y : l'ordonnée du vecteur
      */
     public Vector(double x, double y) {
         this.x = x;
@@ -37,116 +39,66 @@ public class Vector {
     }
 
     /**
-     * Calcule la distance euclidienne entre this et <b>vector</b>
+     * Calcule la distance entre this et un vecteur (vus comme des positions)
      * 
-     * @param vector : Le vecteur donc on veut calculer la distance avec this
-     * @return La distance entre this et <b>vector</b>
+     * @param vector : l'autre vecteur
+     * @return la distance
      */
     public double distance(Vector vector) {
         return Math.pow(Math.pow(vector.x - this.x, 2) + Math.pow(vector.y - this.y, 2), 0.5);
     }
 
     /**
-     * getter
+     * Renvoie la coordonnée x du vecteur
      * 
-     * @return La coordonnée x du vecteur
+     * @return la coordonnée x du vecteur
      */
     public double getX() {
         return x;
     }
 
     /**
-     * settter
+     * Renvoie la coordonnée y du vecteur
      * 
-     * @param x : La coordonnée x du vecteur
-     */
-    public void setX(double x) {
-        this.x = x;
-    }
-
-    /**
-     * getter
-     * 
-     * @return La coordonnée y du vecteur
+     * @return la coordonnée y du vecteur
      */
     public double getY() {
         return y;
     }
 
     /**
-     * settter
+     * Renvoie une copie de this soustrait d'un vecteur vector. this n'est pas
+     * modifié
      * 
-     * @param x : La coordonnée y du vecteur
-     */
-    public void setY(double y) {
-        this.y = y;
-    }
-
-    public void set(Vector vector) {
-        setX(vector.x);
-        setY(vector.y);
-    }
-
-    /**
-     * Méthode pour ajouter un vecteur (avec modification)
-     * 
-     * @param vector : Le vecteur à ajouter
-     */
-    public void add(Vector vector) {
-        this.x += vector.x;
-        this.y += vector.y;
-    }
-
-    /**
-     * Méthode pour retirer un vecteur (avec modification)
-     * 
-     * @param vector : Le vecteur à retirer
-     */
-    public void substract(Vector vector) {
-        this.x -= vector.x;
-        this.y -= vector.y;
-    }
-
-    /**
-     * 
-     * @param vector
-     * @return
+     * @param vector : le vecteur à soustraire
+     * @return la copie du vecteur soustrait
      */
     public Vector copyMinus(Vector vector) {
         return new Vector(this.x - vector.x, this.y - vector.y);
     }
 
     /**
-     * Méthode pour multiplier this par un scalaire (sans modification)
+     * Renvoie une copie de this modifié d'un coefficient mult. this n'est pas
+     * modifié
      * 
-     * @param mult : Le coefficient de multiplication
-     * @return Un nouveau vecteur corrrespondant à la multiplication
+     * @param mult : le coefficient
+     * @return la copie du vecteur multiplié
      */
     public Vector getMult(double mult) {
         return new Vector(this.x * mult, this.y * mult);
     }
 
+    /**
+     * Renvoie la norme de this
+     * 
+     * @return la norme de this
+     */
     public double getNorm() {
         return Math.pow(Math.pow(this.x, 2) + Math.pow(this.y, 2), 0.5);
     }
 
-    /**
-     * 
-     * @param newNorm
-     */
-    public void normalize(double newNorm) {
-        double norm = getNorm();
-        this.x = x / norm * newNorm;
-        this.y = y / norm * newNorm;
-    }
-
-    /**
-     * Renvoie un copie du vecteur
-     * 
-     * @param vector
-     * @return Une copie de <b>vector</b>
-     */
-    public Vector copy() {
-        return new Vector(this.x, this.y);
+    @Override
+    public String toString() {
+        return "Vecteur : (" + x + ";" + y + ")";
     }
 }

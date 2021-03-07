@@ -3,9 +3,11 @@ package algorithms;
 import structure.Modification;
 
 /**
- * Classe implémentant un solveur de TSP par une méthode de recuit simulé.
+ * Classe implémentant une méthode de recuit simulé.
  * 
+ * @LouisProffitX
  * @author Louis Proffit
+ * @version 1.0
  */
 public class TSPRecuit {
 
@@ -32,13 +34,12 @@ public class TSPRecuit {
 	/**
 	 * Méthode statique d'amélioration du chemin
 	 * 
-	 * @param path
+	 * @param toImprove : la structure à améliorer
 	 */
-	public static void improvePath(RecuitInterface path) {
-		int size = path.getSize();
+	public static void improvePath(RecuitInterface toImprove) {
+		int size = toImprove.getSize();
 		if (size <= 3)
 			return;
-		long startTime = System.currentTimeMillis();
 		int currentSteps = 0;
 		int currentStepsWithoutChange = 0;
 		double currentTemperature;
@@ -49,17 +50,15 @@ public class TSPRecuit {
 
 		while (currentSteps < numberOfSteps & currentStepsWithoutChange < numberOfStepsWithoutChange) {
 			currentTemperature = temperature(currentSteps);
-			modification = path.modificationFunction();
-			improvement = path.improvementFunction(modification);
+			modification = toImprove.modificationFunction();
+			improvement = toImprove.improvementFunction(modification);
 			if (h(Math.exp(-improvement / currentTemperature)) > Math.random()) {
-				path.commitFunction(modification);
+				toImprove.commitFunction(modification);
 				currentStepsWithoutChange = 0;
 			} else
 				currentStepsWithoutChange += 1;
 			currentSteps++;
 		}
-		long deltaTimeInMillis = System.currentTimeMillis() - startTime;
-		System.out.println("TSP Calculé en " + deltaTimeInMillis + "ms");
 	}
 
 	/**
@@ -70,12 +69,12 @@ public class TSPRecuit {
 	 */
 	private static double temperature(int time) {
 		switch (temperatureDecroissanceType) {
-			case LOG:
-				return temperatureInitialValue / Math.log(time);
-			case N:
-				return temperatureInitialValue / time;
-			case N2:
-				return temperatureInitialValue / (time * time);
+		case LOG:
+			return temperatureInitialValue / Math.log(time);
+		case N:
+			return temperatureInitialValue / time;
+		case N2:
+			return temperatureInitialValue / (time * time);
 		}
 		return 0;
 	}

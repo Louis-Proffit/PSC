@@ -5,73 +5,98 @@ import java.util.LinkedList;
 import algorithms.RecuitInterface;
 import algorithms.TSPRecuit;
 
+/**
+ * Classe représentant un {@link Cluster}. Contient la possibilité d'être
+ * améliorée par un algorithme {@link TSPRecuit}.
+ * 
+ * @LouisProffitX
+ * @author Louis Proffit
+ * @version 1.0
+ */
 public class Cluster implements RecuitInterface {
 
-    private Checkpoint currentTarget;
-    private Path path;
-    private final Vector sum;
+    /**
+     * La cible en cours dans le cluster
+     */
+    private Checkpoint currentTarget = null;
 
-    public Cluster() {
-        this.currentTarget = null;
-        this.path = new Path();
-        this.sum = new Vector(0f, 0f);
-    }
+    /**
+     * Le chemin du cluster
+     */
+    private Path path = new Path();
 
+    /**
+     * Effectue un passage de {@link TSPRecuit} pour améliorer le chemin
+     */
     public void improvePath() {
         TSPRecuit.improvePath(this);
     }
 
-    public Vector getMean() {
-        switch (path.getSize()) {
-            case (0):
-                return sum;
-            default:
-                return sum.getMult(1f / path.getSize());
-        }
+    /**
+     * Renvoie la distance entre le cluster (sa moyenne) et une position
+     * 
+     * @param vector : la position
+     * @return la distance
+     */
+    public double distance(Vector vector) {
+        return path.distance(vector);
     }
 
-    public void moveTowardsTarget(Vector position, double speed) {
-        if (currentTarget == null)
-            return;
-        if (position.distance(currentTarget.getPosition()) < speed) {
-            position.set(currentTarget.getPosition());
-            moveTargetForward();
-        } else {
-            Vector movement = currentTarget.getPosition().copyMinus(position);
-            movement.normalize(speed);
-            position.add(movement);
-        }
+    /**
+     * Renvoie la cible courante
+     * 
+     * @return : la cible courante
+     */
+    public Checkpoint getCurrentTarget() {
+        return currentTarget;
     }
 
-    private void moveTargetForward() {
+    /**
+     * Avance d'un cran la cible. Si il n'y a pas de successeur, la cible devient
+     * nulle
+     */
+    public void moveTargetForward() {
         if (currentTarget == null)
             return;
         this.currentTarget = path.getCheckpointAfter(currentTarget);
     }
 
+    /**
+     * Renvoie la liste des checkpoints du chemin dans l'ordre de parcours (le
+     * premier élément est arbitraire)
+     * 
+     * @return : la liste ordonnée des checkpoints
+     */
     public LinkedList<Checkpoint> getCheckpointsOrdered() {
         return path.getCheckpointsOrdered();
+    }
+
+    /**
+     * Ajoute un checkpoint au chemin
+     * 
+     * @param checkpoint : le checkpoint à ajouter
+     */
+    public void addCheckpoint(Checkpoint checkpoint) {
+        if (currentTarget == null)
+            currentTarget = checkpoint;
+        path.addCheckpoint(checkpoint);
+    }
+
+    /**
+     * Retire un checkpoint du chemin. Si ce checkpoint est la cible, on passe à la
+     * suivante
+     * 
+     * @param checkpoint : le checkpoint à retirer
+     */
+    public void removeCheckpoint(Checkpoint checkpoint) {
+        if (currentTarget == checkpoint)
+            currentTarget = path.getCheckpointAfter(checkpoint);
+        path.removeCheckpoint(checkpoint);
     }
 
     @Override
     public int getSize() {
         return path.getSize();
-    }
-
-    public void addCheckpoint(Checkpoint checkpoint) {
-        if (currentTarget == null) {
-            currentTarget = checkpoint;
-        }
-        sum.add(checkpoint.getPosition());
-        path.addCheckpoint(checkpoint);
-    }
-
-    public void removeCheckpoint(Checkpoint checkpoint) {
-        if (currentTarget == checkpoint) {
-            currentTarget = path.getCheckpointAfter(checkpoint);
-        }
-        sum.substract(checkpoint.getPosition());
-        path.removeCheckpoint(checkpoint);
     }
 
     @Override
@@ -80,9 +105,6 @@ public class Cluster implements RecuitInterface {
         return new Pair<Integer>((int) (Math.random() * size), (int) (Math.random() * size));
     }
 
-    /**
-     * Renvoie la différence entre la nouvelle distance et l'ancienne distance
-     */
     @Override
     @SuppressWarnings("unchecked")
     public Double improvementFunction(Modification modification) {
@@ -92,10 +114,10 @@ public class Cluster implements RecuitInterface {
         Checkpoint secondCheckpoint = path.getCheckpointAtIndex(swap.getSecond());
         Checkpoint checkpointBeforeFirst = path.getCheckpointBefore(firstCheckpoint);
         Checkpoint checkpointAfterSecond = path.getCheckpointAfter(secondCheckpoint);
-        result += checkpointBeforeFirst.getPosition().distance(secondCheckpoint.getPosition());
-        result += checkpointAfterSecond.getPosition().distance(firstCheckpoint.getPosition());
-        result -= firstCheckpoint.getPosition().distance(checkpointBeforeFirst.getPosition());
-        result -= secondCheckpoint.getPosition().distance(checkpointAfterSecond.getPosition());
+        result += checkpointBeforeFirst.distance(secondCheckpoint);
+        result += checkpointAfterSecond.distance(firstCheckpoint);
+        result -= firstCheckpoint.distance(checkpointBeforeFirst);
+        result -= secondCheckpoint.distance(checkpointAfterSecond);
         return result;
     }
 

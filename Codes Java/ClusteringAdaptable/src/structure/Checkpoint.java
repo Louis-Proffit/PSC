@@ -1,34 +1,20 @@
 package structure;
 
-public class Checkpoint {
+/**
+ * Classe représentant un checkpoint
+ * 
+ * @LouisProffitX
+ * @author Louis Proffit
+ * @version 1.0
+ */
+public class Checkpoint extends Vector {
 
-    private final Vector position;
-
-    public Checkpoint() {
-        this.position = new Vector();
-    }
-
+    /**
+     * Constructeur simple
+     * 
+     * @param position
+     */
     public Checkpoint(Vector position) {
-        this.position = position;
-    }
-
-    public Vector getPosition() {
-        return position;
-    }
-
-    public Checkpoint copy() {
-        return new Checkpoint(this.getPosition().copy());
-    }
-
-    public Checkpoint(Vector position, Checkpoint nextCheckpoint, Checkpoint previousCheckpoint) {
-        this.position = position;
-    }
-
-    public double distance(Vector vector) {
-        return vector.distance(this.position);
-    }
-
-    public double distance(Checkpoint checkpoint) {
-        return checkpoint.position.distance(this.position);
+        super(position.getX(), position.getY());
     }
 }

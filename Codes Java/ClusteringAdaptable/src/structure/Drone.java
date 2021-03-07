@@ -1,36 +1,36 @@
 package structure;
 
-public class Drone {
+/**
+ * Classe représentant un {@link Drone}
+ * 
+ * @LouisProffitX
+ * @author Louis Proffit
+ * @version 1.0
+ */
+public class Drone extends MutableVector {
 
+    /**
+     * La vitesse du drone en unité de cadre par mise à jour graphique
+     */
     public static double speed = 0.01;
 
-    private Vector position;
-    private Cluster cluster;
-
-    public Drone() {
-        this.position = new Vector();
-        this.cluster = new Cluster();
-    }
-
+    /**
+     * Constructeur simple
+     * 
+     * @param position
+     */
     public Drone(Vector position) {
-        this.position = position;
-        this.cluster = new Cluster();
+        super(position.getX(), position.getY());
     }
 
-    public Drone(Vector position, Cluster cluster) {
-        this.position = position;
-        this.cluster = cluster;
-    }
-
-    public Vector getPosition() {
-        return position;
-    }
-
-    public Cluster getCluster() {
-        return cluster;
-    }
-
-    public void move() {
-        cluster.moveTowardsTarget(position, speed);
+    /**
+     * Fait avancer un drone vers une cible sur la distance speed
+     * 
+     * @param target : la cible
+     */
+    public void move(Vector target) {
+        MutableVector movement = new MutableVector(target.getX() - this.getX(), target.getY() - this.getY());
+        movement.normalize(speed);
+        this.add(movement);
     }
 }

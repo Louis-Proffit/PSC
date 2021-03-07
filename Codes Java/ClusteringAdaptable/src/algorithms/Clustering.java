@@ -1,120 +1,114 @@
 package algorithms;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map.Entry;
 
 import structure.Checkpoint;
 import structure.Cluster;
-import structure.Pair;
 
+/**
+ * Classe qui gère l'association entre checkpoints et clusters. Elle optimise
+ * cette association grâce à un algorithme k-means.
+ * 
+ * @author Louis Proffit
+ * @version 1.0
+ */
 public class Clustering {
 
-    private LinkedList<Cluster> availableClusters;
-    private HashMap<Checkpoint, Cluster> association;
+    /**
+     * Liste des clusters
+     */
+    private LinkedList<Cluster> availableClusters = new LinkedList<>();
 
-    public Clustering() {
-        this.availableClusters = new LinkedList<>();
-        this.association = new HashMap<>();
-    }
+    /**
+     * Matrice d'association entre checkpoints et clusters
+     */
+    private HashMap<Checkpoint, Cluster> association = new HashMap<>();
 
+    /**
+     * Ajoute un checkpoint
+     * 
+     * @param checkpoint : Le checkpoint à ajouter
+     * @param improve    : Le travail à effectuer à la fin
+     */
     public void addCheckpoint(Checkpoint checkpoint, ImproveType improve) {
-        if (availableClusters.isEmpty())
-            return;
-        double distanceMin = 2;
-        double distance;
-        Cluster minCluster = null;
-        for (Cluster cluster : availableClusters) {
-            if (cluster.getSize() == 0) {
-                // On ajoute systématiquement à un cluster vide
-                cluster.addCheckpoint(checkpoint);
-                if (improve == ImproveType.COMPLETE)
-                    improveComplete();
-                return;
-            }
-            distance = checkpoint.distance(cluster.getMean());
-            if (distance < distanceMin) {
-                distanceMin = distance;
-                minCluster = cluster;
-            }
-        }
-        assert minCluster != null;
-        minCluster.addCheckpoint(checkpoint);
-        switch (improve) {
-            case NULL:
-                return;
-            case SIMPLE:
-                minCluster.improvePath();
-            case COMPLETE:
-                improveComplete();
-        }
+        Cluster cluster = availableClusters.getFirst();
+        cluster.addCheckpoint(checkpoint);
+        association.put(checkpoint, cluster);
+        improve(improve);
     }
 
-    public void addCluster(Cluster cluster) {
+    /**
+     * Ajoute un cluster
+     * 
+     * @param cluster : Le cluster à ajouter
+     * @param improve : Le travail à effectuer à la fin
+     */
+    public void addCluster(Cluster cluster, ImproveType improve) {
         availableClusters.add(cluster);
+        improve(improve);
     }
 
-    public Collection<Cluster> getClusters() {
-        return association.values();
-    }
-
-    public void improveComplete() {
-        boolean modified = true;
-        while (modified) {
-            modified = improveOneStep();
+    /**
+     * Effectue un travail d'amélioration
+     * 
+     * @param improve : Le type de travail d'amélioration à effectuer. Si c'est NULL
+     *                : on ne fait rien. Si c'est SIMPLE : on améliore le chemin à
+     *                l'intérieur de chacun des clusters. Si c'est COMPLETE : on
+     *                effectue un passage de k-means complet, puis on efectue le
+     *                même travail que SIMPLE.
+     * @see ImproveType
+     */
+    public void improve(ImproveType improve) {
+        if (improve == ImproveType.NULL)
+            return;
+        else if (improve == ImproveType.SIMPLE) {
+            for (Cluster clusterLocal : availableClusters)
+                clusterLocal.improvePath();
+            return;
+        } else if (improve == ImproveType.COMPLETE) {
+            boolean modified = true;
+            while (modified)
+                modified = improveOneStep();
+            for (Cluster cluster : availableClusters)
+                cluster.improvePath();
+            return;
         }
-        for (Cluster cluster : availableClusters)
-            cluster.improvePath();
     }
 
-    public void improveSteps(int numberOfSteps) {
-        for (int i = 0; i < numberOfSteps; i++) {
-            improveOneStep();
-        }
-    }
-
+    /**
+     * Effectue une étape de k-means
+     * 
+     * @return
+     */
     private boolean improveOneStep() {
-        HashMap<Checkpoint, Pair<Cluster>> modifications = new HashMap<>(); // Le premier cluster est l'ancien, le
-                                                                            // deuxième est le nouveau
+        HashMap<Checkpoint, Cluster> modifications = new HashMap<>();
         boolean modified = false;
-        boolean modifiedLocal = false;
-        double distanceLocal;
-        double currentDistance;
+        double distance;
+        double currentMinDistance;
         Cluster cluster;
-        Cluster minCluster = null;
+        Cluster minCluster;
         for (Checkpoint checkpoint : association.keySet()) {
-            modifiedLocal = false;
             cluster = association.get(checkpoint);
-            currentDistance = checkpoint.distance(cluster.getMean());
+            currentMinDistance = cluster.distance(checkpoint);
             minCluster = null;
             for (Cluster otherCluster : availableClusters) {
-                if (otherCluster.getSize() == 0) {
-                    association.put(checkpoint, otherCluster); // On ajoute la nouvelle association
-                    cluster.removeCheckpoint(checkpoint); // On enlève le checkpoint de son ancien cluster
-                    otherCluster.addCheckpoint(checkpoint);
-                    return true;
-                }
-                distanceLocal = checkpoint.distance(otherCluster.getMean());
-                if (distanceLocal < currentDistance) {
-                    currentDistance = distanceLocal;
+                distance = otherCluster.distance(checkpoint);
+                if (distance < currentMinDistance) {
+                    currentMinDistance = distance;
                     minCluster = otherCluster;
-                    modifiedLocal = true;
                     modified = true;
                 }
             }
-            if (modifiedLocal) {
-                modifications.put(checkpoint, new Pair<Cluster>(cluster, minCluster));
+            if (minCluster != null) {
+                modifications.put(checkpoint, minCluster);
             }
         }
-        if (modified) {
-            for (Entry<Checkpoint, Pair<Cluster>> entry : modifications.entrySet()) {
-                association.put(entry.getKey(), entry.getValue().getSecond()); // On ajoute la nouvelle association
-                entry.getValue().getFirst().removeCheckpoint(entry.getKey()); // On enlève le checkpoint de son ancien
-                                                                              // cluster
-                entry.getValue().getSecond().addCheckpoint(entry.getKey()); // On ajoute le checkpoint dans son nouveau
-                                                                            // cluster
-            }
+        for (Entry<Checkpoint, Cluster> entry : modifications.entrySet()) {
+            Cluster oldCluster = association.put(entry.getKey(), entry.getValue()); // On ajoute la nouvelle association
+            oldCluster.removeCheckpoint(entry.getKey()); // On enlève le checkpoint de son ancien cluster
+            entry.getValue().addCheckpoint(entry.getKey()); // On ajoute le checkpoint dans son nouveau cluster
         }
         return modified;
     }
