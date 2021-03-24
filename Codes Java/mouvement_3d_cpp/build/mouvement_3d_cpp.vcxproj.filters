@@ -34,6 +34,12 @@
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\curve_drawable\curve_drawable.cpp">
       <Filter>vcl\display\drawable\curve_drawable</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable.cpp">
+      <Filter>vcl\display\drawable\hierarchy_mesh_drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node\hierarchy_mesh_drawable_node.cpp">
+      <Filter>vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\mesh_drawable\mesh_drawable.cpp">
       <Filter>vcl\display\drawable\mesh_drawable</Filter>
     </ClCompile>
@@ -199,9 +205,6 @@
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\third_party\src\simplexnoise\simplexnoise1234.cpp">
       <Filter>third_party\src\simplexnoise</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\cluster.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\drone.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -296,6 +299,12 @@
     </ClInclude>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\drawable.hpp">
       <Filter>vcl\display\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable.hpp">
+      <Filter>vcl\display\drawable\hierarchy_mesh_drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node\hierarchy_mesh_drawable_node.hpp">
+      <Filter>vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\mesh_drawable\mesh_drawable.hpp">
       <Filter>vcl\display\drawable\mesh_drawable</Filter>
@@ -1329,10 +1338,7 @@
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\third_party\src\simplexnoise\simplexnoise1234.hpp">
       <Filter>third_party\src\simplexnoise</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\cluster.hpp">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\drone.hpp">
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\structure.hpp">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.hpp">
@@ -1576,6 +1582,12 @@
     </Filter>
     <Filter Include="vcl\display\drawable\curve_drawable">
       <UniqueIdentifier>{DAF1DF10-D8AA-3F9D-858A-16026794FA4A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\hierarchy_mesh_drawable">
+      <UniqueIdentifier>{16A7549D-9DF1-31BF-9043-BB618F00DB2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node">
+      <UniqueIdentifier>{1DE75488-6A82-3AEA-8D28-3DBB2161D571}</UniqueIdentifier>
     </Filter>
     <Filter Include="vcl\display\drawable\mesh_drawable">
       <UniqueIdentifier>{4E05E16E-D8EB-3762-98E5-4D09D5CBEF51}</UniqueIdentifier>

@@ -1,15 +1,30 @@
 
 #include "terrain.hpp"
+#include "structure.hpp"
 
 using namespace vcl;
 
-vec2 hill_center = vec2(0.5f, 0.2f);
-float hill_height = -0.2f;
-float hill_sigma = 0.5f;
+float potential_min = -0.2f;
+float potential_max = 0.03f;
+float potential_decrease = 0.0005f;
+float potential_value_at_reset = 0.03f;
+float drone_surveillance_radius = 0.05f;
+
+// Colors
+vec3 red = vec3(1.0f, 0.0f, 0.0f);
+vec3 green = vec3(0.0f, 1.0f, 0.0f);
+
+vec3 get_color_from_height(float height);
 
 Terrain::Terrain() {
-	n = 100;
+	n = 200;
 	m = 100;
+
+	// Création des coline
+	hill hill_0{ vec2(0.5, 0.8), 0.4, 0.2 };
+	hills.push_back(hill_0);
+	hill hill_1{ vec2(0.2, 0.3), 0.3, 0.1 };
+	hills.push_back(hill_1);
 
 	// Configuration, en bleu, du potentiel initial
 	initial_potential = initialize_terrain();
@@ -17,8 +32,8 @@ Terrain::Terrain() {
 	float z;
 	for (int i = 0; i <= n; i++) {
 		for (int j = 0; j <= m; j++) {
-			z = initial_potential.position[i * (n + 1) + j].z;
-			initial_potential.color[i * (n + 1) + j] = vec3(z / hill_height, 1.0f - z / hill_height, 0.0f);
+			z = initial_potential.position[i * (m + 1) + j].z;
+			initial_potential.color[i * (m + 1) + j] = get_color_from_height(z);
 		}
 	}
 
@@ -27,28 +42,28 @@ Terrain::Terrain() {
 	current_potential.color.resize((n + 1) * (m + 1));
 	for (int i = 0; i <= n; i++) {
 		for (int j = 0; j <= m; j++) {
-			z = current_potential.position[i * (n + 1) + j].z;
-			current_potential.color[i * (n + 1) + j] = vec3(z / hill_height, 1.0f - z / hill_height, 0.0f);
+			z = current_potential.position[i * (m + 1) + j].z;
+			current_potential.color[i * (m + 1) + j] = get_color_from_height(z);
 		}
 	}
 }
 
-void Terrain::update_current_visual(Drone& drone, mesh_drawable& current_potential_visual)
+void Terrain::update_potential(std::vector<Drone> *drones, mesh_drawable& current_potential_visual)
 {
-	std::cout << current_potential.position.size() << std::endl;
-
-	vec2 drone_relative_position = vec2(drone.get_position().x, drone.get_position().y);
 	float x, y, z;
 	for (int i = 0; i <= n; i++) {
 		for (int j = 0; j <= m; j++) {
 			x = float(i) / n;
 			y = float(j) / m;
-			z = ((current_potential.position[i * (n + 1) + j] + 0.01f * initial_potential.position[i * (n + 1) + j]) / 1.01f).z;
-			current_potential.position[i * (n + 1) + j].z = z;
-			current_potential.color[i * (n + 1) + j] = vec3(z / hill_height, 1.0f - z / hill_height, 0.0f);
-			if (norm(vec2(x, y) - drone_relative_position) < 0.1f) {
-				current_potential.position[i * (n + 1) + j].z = 0.0f;
-				current_potential.color[i * (n + 1) + j] = vec3(0.0f, 1.0f, 0.0f);
+			z = ((current_potential.position[i * (m + 1) + j] + potential_decrease * initial_potential.position[i * (m + 1) + j]) / (1 + potential_decrease)).z;
+			current_potential.position[i * (m + 1) + j].z = z;
+			current_potential.color[i * (m + 1) + j] = get_color_from_height(z);
+
+			for (int k = 0; k < drones->size(); k++) {
+				if (norm(vec2(x, y) - drones->operator[](k).get_position().xy()) < drone_surveillance_radius) {
+					current_potential.position[i * (m + 1) + j].z = potential_value_at_reset;
+					current_potential.color[i * (m + 1) + j] = vec3(0.0f, 1.0f, 0.0f);
+				}
 			}
 		}
 	}
@@ -70,10 +85,47 @@ mesh Terrain::get_current_mesh()
 	return current_potential;
 }
 
-vcl::vec3 Terrain::evaluate_terrain(float x, float y)
+float Terrain::evaluate_terrain_live(float x, float y)
 {
-	float z = hill_height * exp( - pow(norm(vec2(x, y) - hill_center) / hill_sigma, 2));
+
+	if (x <= 0 || x >= 1 || y <= 0 || y >= 1) return potential_value_at_reset;
+	
+	int i = int(x * n);
+	int j = int(y * m);
+
+	assert(i < n & 0 <= i & j < m & 0 <= j);
+
+	float result = 0;
+
+	result += current_potential.position[i * (m + 1) + j].z;
+	result += current_potential.position[(i + 1) * (m + 1) + j].z;
+	result += current_potential.position[i * (m + 1) + j + 1].z;
+	result += current_potential.position[(i + 1) * (m + 1) + j + 1].z;
+
+	return result / 4;
+}
+
+vec3 Terrain::evaluate_terrain(float x, float y)
+{
+	if (x <= 0 || x >= 1 || y <= 0 || y >= 1) return vec3(x, y, 0);
+
+	assert(x > 0 & x < 1 & y > 0 & y < 1);
+
+	float z = 0;
+	hill _hill;
+	for (int i = 0; i < hills.size(); i++) {
+		_hill = hills[i];
+		z -= _hill.height * exp(-pow(norm(vec2(x, y) - _hill.center) / _hill.sigma, 2));
+	}
+
 	return vec3(x, y, z);
+}
+
+
+vec3 get_color_from_height(float height) 
+{
+	float t = (height - potential_min) / (potential_max - potential_min);
+	return t * green + (1 - t) * red;
 }
 
 mesh Terrain::initialize_terrain()
@@ -82,19 +134,18 @@ mesh Terrain::initialize_terrain()
 	result.position.resize((n + 1) * (m + 1));
 	result.color.resize((n + 1) * (m + 1));
 	result.connectivity.resize(2 * n * m);
-	float x;
-	float y;
+	float x, y;
 	for (int i = 0; i <= n; i++) {
 		for (int j = 0; j <= m; j++) {
 			x = float(i) / n;
 			y = float(j) / m;
-			result.position[i * (n + 1) + j] = evaluate_terrain(x, y);
+			result.position[i * (m + 1) + j] = evaluate_terrain(x, y);
 		}
 	}
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
-			result.connectivity[2 * (i * n + j)] = uint3(i * (n + 1) + j, (i + 1) * (n + 1) + j, i * (n + 1) + j + 1);
-			result.connectivity[2 * (i * n + j) + 1] = uint3((i + 1) * (n + 1) + j, (i + 1) * (n + 1) + j + 1, i * (n + 1) + j + 1);
+			result.connectivity[2 * (i * m + j)] = uint3(i * (m + 1) + j, (i + 1) * (m + 1) + j, i * (m + 1) + j + 1);
+			result.connectivity[2 * (i * m + j) + 1] = uint3((i + 1) * (m + 1) + j, (i + 1) * (m + 1) + j + 1, i * (m + 1) + j + 1);
 		}
 	}
 	result.fill_empty_field();

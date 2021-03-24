@@ -1,92 +1,122 @@
 
-#include "cluster.hpp"
-#include "drone.hpp"
+#include "structure.hpp"
 
 using namespace vcl;
 
+// Graphical constants
+float arm_length = 1.0f;
+float arm_radius = 0.1f;
+float rotor_radius_major = 0.3f;
+float rotor_radius_minor = 0.05f;
+float scale = 0.02f;
+float default_drone_height = 0.1f;
+
 float Drone::size = 0.02f;
-float Drone::speed = 0.01f;
+float Drone::speed = 0.003f;
+int Drone::direction_samples = 50;
+int Drone::measures_per_sample = 10;
+float Drone::sample_distance = 0.3f;
+int Drone::frames_per_step = 10;
 
-vec3 begin_position = vec3(0.0f, 0.0f, 0.0f);
-vec3 target_position = vec3(0.0f, 1.0f, 0.0f);
-unsigned int number_of_steps = 0;
-unsigned int maximum_number_of_steps = 30;
+int counter = 0;
 
-Drone::Drone(cluster *cluster_instance)
+Drone::Drone()
 {
-	position_initialized = false;
-	drone_mesh = initialize_drone(Drone::size);
-	drone_cluster = cluster_instance;
-	target = cluster_instance->get_first_checkpoint();
-	position = 0;
+	position = vec3(rand_interval(), rand_interval(), default_drone_height);
+	direction = 2 * pi * rand_interval();
 }
 
-void Drone::update_position() 
+void Drone::update_position(Terrain *terrain)
 {
-	if (number_of_steps == maximum_number_of_steps) {
-		number_of_steps = 0;
-		begin_position = target_position;
-		target_position = vec3(rand_interval(), rand_interval(), 0.0f);
-		
+	if (counter == frames_per_step) {
+		float score;
+		float best_score = 0.1 * measures_per_sample;
+		float best_direction = 0;
+		float local_direction = 0;
+		for (int i = 0; i <= direction_samples; i++) {
+			local_direction = float(i) / direction_samples * 2 * pi;
+			score = evaluate_direction(local_direction, terrain);
+			if (score < best_score) {
+				best_score = score;
+				best_direction = local_direction;
+			}
+		}
+		direction = best_direction;
+		counter = 0;
 	}
-	else {
-		number_of_steps++;
-		*position += (target_position - begin_position) / maximum_number_of_steps;
-	}
+	else 
+		counter++;
+	position += speed * vec3(cos(direction), sin(direction), 0);
+
+
+}
+
+void Drone::update_visual(hierarchy_mesh_drawable* drone_visual) {
+
+	vec3 const previous_position = drone_visual->operator[]("root").transform.translate;
+	rotation bird_rotation = rotation_between_vector({ 1, 0, 0 }, normalize(position - previous_position));
+
+	// Mouvement de l'oiseau
+	drone_visual->operator[]("root").transform.translate = position;
+	drone_visual->operator[]("root").transform.rotate = rotation(bird_rotation);
+
+	drone_visual->update_local_to_global_coordinates();
 }
 
 vcl::vec3 Drone::get_position()
 {
-	return *position;
+	return position;
 }
 
-mesh Drone::get_mesh()
+hierarchy_mesh_drawable Drone::get_mesh_drawable()
 {
-	return drone_mesh;
-}
 
-void Drone::set_position(vec3 *_position) {
-	if (position_initialized) std::cout << "Configuration de la position à nouveau, drone.cpp" << std::endl;
-	position = _position;
-	position_initialized = true;
-}
+	hierarchy_mesh_drawable result;
+	mesh_drawable arm = mesh_drawable(mesh_primitive_cubic_grid(vec3(-arm_length / 2, -arm_radius / 2, -arm_radius / 2), 
+		vec3(-arm_length / 2, -arm_radius / 2, arm_radius / 2), 
+		vec3(-arm_length / 2, arm_radius / 2, arm_radius / 2), 
+		vec3(-arm_length / 2, arm_radius / 2, -arm_radius / 2), 
+		vec3(arm_length / 2, -arm_radius / 2, -arm_radius / 2), 
+		vec3(arm_length / 2, -arm_radius / 2, arm_radius / 2), 
+		vec3(arm_length / 2, arm_radius / 2, arm_radius / 2), 
+		vec3(arm_length / 2, arm_radius / 2, -arm_radius / 2)));
+	mesh_drawable rotor = mesh_drawable(mesh_primitive_torus(rotor_radius_major, rotor_radius_minor));
+	arm.shading.color = vec3(0.0f, 0.0f, 0.0f);
+	result.add(mesh_drawable(), "root");
+	result.add(arm, "first_arm", "root");
+	result.add(arm, "second_arm", "root");
+	result.add(rotor, "first_left_rotor", "first_arm", vec3(arm_length / 2 + rotor_radius_major, 0, 0));
+	result.add(rotor, "first_right_rotor", "first_arm", vec3(-arm_length / 2 - rotor_radius_major, 0, 0));
+	result.add(rotor, "second_left_rotor", "second_arm", vec3(-arm_length / 2 - rotor_radius_major, 0, 0));
+	result.add(rotor, "second_right_rotor", "second_arm", vec3(arm_length / 2 + rotor_radius_major, 0, 0));
 
-mesh Drone::initialize_drone(float size)
-{
-	mesh result;
-	result.position.resize(8);
-	result.color.resize(8);
-	result.connectivity.resize(12);
-	result.position[0] = vec3(0.0f, 0.0f, 0.0f);
-	result.position[1] = vec3(0.0f, 0.0f, size);
-	result.position[2] = vec3(0.0f, size, 0.0f);
-	result.position[3] = vec3(0.0f, size, size);
-	result.position[4] = vec3(size, 0.0f, 0.0f);
-	result.position[5] = vec3(size, 0.0f, size);
-	result.position[6] = vec3(size, size, 0.0f);
-	result.position[7] = vec3(size, size, size);
-	result.color[0] = vec3(0.0f, 0.0f, 1.0f);
-	result.color[1] = vec3(0.0f, 0.0f, 1.0f);
-	result.color[2] = vec3(0.0f, 0.0f, 1.0f);
-	result.color[3] = vec3(0.0f, 0.0f, 1.0f);
-	result.color[4] = vec3(0.0f, 0.0f, 1.0f);
-	result.color[5] = vec3(0.0f, 0.0f, 1.0f);
-	result.color[6] = vec3(0.0f, 0.0f, 1.0f);
-	result.color[7] = vec3(0.0f, 0.0f, 1.0f);
-	result.connectivity[0] = uint3(0, 1, 4);
-	result.connectivity[1] = uint3(1, 5, 4);
-	result.connectivity[2] = uint3(1, 3, 5);
-	result.connectivity[3] = uint3(3, 7, 5);
-	result.connectivity[4] = uint3(3, 6, 2);
-	result.connectivity[5] = uint3(3, 6, 7);
-	result.connectivity[6] = uint3(2, 0, 4);
-	result.connectivity[7] = uint3(2, 4, 6);
-	result.connectivity[8] = uint3(0, 1, 2);
-	result.connectivity[9] = uint3(1, 3, 2);
-	result.connectivity[10] = uint3(5, 7, 6);
-	result.connectivity[11] = uint3(5, 6, 4);
+	result["first_arm"].transform.rotate = rotation(vec3(0, 0, 1), pi / 4);
+	result["second_arm"].transform.rotate = rotation(vec3(0, 0, 1), -pi / 4);
 
-	result.fill_empty_field();
+	result["root"].transform.translate = position;
+	result["root"].transform.scale = scale;
+
+	result.update_local_to_global_coordinates();
 
 	return result;
+}
+
+double Drone::evaluate_direction(float local_direction, Terrain* terrain)
+{
+	assert(local_direction > 0 & local_direction < 360);
+
+	double result = 0;
+	float x = position.x;
+	float y = position.y;
+	float dx = cos(local_direction) * sample_distance / measures_per_sample;
+	float dy = sin(local_direction) * sample_distance / measures_per_sample;
+
+	for (int i = 0; i < measures_per_sample; i++) {
+		x += dx;
+		y += dy;
+		result += terrain->evaluate_terrain_live(x, y);
+	}
+
+	return result;
+
 }

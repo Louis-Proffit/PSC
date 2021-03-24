@@ -77,7 +77,7 @@
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\build</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mouvement_3d_cpp.dir</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mouvement_3d_cpp</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -362,6 +362,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\curve_drawable\curve_drawable.cpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\curve_drawable\curve_drawable.hpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\drawable.hpp" />
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable.cpp" />
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable.hpp" />
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node\hierarchy_mesh_drawable_node.cpp" />
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node\hierarchy_mesh_drawable_node.hpp" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\mesh_drawable\mesh_drawable.cpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\mesh_drawable\mesh_drawable.hpp" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\display\drawable\mesh_normal_drawable\mesh_normal_drawable.cpp" />
@@ -763,11 +767,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\third_party\src\lodepng\lodepng.h" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\third_party\src\simplexnoise\simplexnoise1234.cpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\third_party\src\simplexnoise\simplexnoise1234.hpp" />
-    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\cluster.cpp" />
-    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\cluster.hpp" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\drone.cpp" />
-    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\drone.hpp" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\main.cpp" />
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\structure.hpp" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.cpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.hpp" />
   </ItemGroup>

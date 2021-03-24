@@ -2,8 +2,7 @@
 #include <iostream>
 #include <chrono>
 
-#include "drone.hpp"
-#include "terrain.hpp"
+#include "structure.hpp"
 
 using namespace vcl;
 
@@ -35,10 +34,14 @@ void window_size_callback(GLFWwindow* window, int width, int height);
 
 void initialize_data();
 void display_interface();
-void update_graphics(mesh_drawable& terrain_initial_visual, mesh_drawable& terrain_current_visual, mesh_drawable& drone_visual, Drone& drone, Terrain& terrain);
+void update_graphics();
 
-long int start_time;
-long int current_time;
+std::vector<Drone> drones;
+int number_of_drones = 4;
+hierarchy_mesh_drawable drone_visual;
+
+Terrain terrain;
+mesh_drawable terrain_current_visual;
 
 
 int main(int, char* argv[])
@@ -60,22 +63,11 @@ int main(int, char* argv[])
 	std::cout<<"Start animation loop ..."<<std::endl;
 	user.fps_record.start();
 	glEnable(GL_DEPTH_TEST);
-	cluster cluster_instance;
-	Drone drone(&cluster_instance);
-	Terrain terrain;
-	mesh_drawable drone_visual = mesh_drawable(drone.get_mesh());
-	mesh_drawable terrain_initial_visual = mesh_drawable(terrain.get_initial_mesh());
-	mesh_drawable terrain_current_visual = mesh_drawable(terrain.get_current_mesh());
-
-	terrain_initial_visual.transform.translate += vec3(1.2f, 0.0f, 0.0f);
-
-	drone.set_position(&drone_visual.transform.translate);
 
 	while (!glfwWindowShouldClose(window))
 	{
 		scene.light = scene.camera.position();
 		user.fps_record.update();
-		current_time = static_cast<long>(clock());
 		
 		glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
@@ -92,7 +84,7 @@ int main(int, char* argv[])
 		if(user.gui.display_frame) draw(user.global_frame, scene);
 
 		display_interface();
-		update_graphics(terrain_initial_visual, terrain_current_visual, drone_visual, drone, terrain);
+		update_graphics();
 
 		ImGui::End();
 		imgui_render_frame(window);
@@ -106,28 +98,25 @@ int main(int, char* argv[])
 	return 0;
 }
 
-void update_graphics(mesh_drawable& terrain_initial_visual, mesh_drawable& terrain_current_visual, mesh_drawable& drone_visual, Drone& drone, Terrain& terrain)
+void update_graphics()
 {
 	// Update des objets
-	drone.update_position();
-	terrain.update_current_visual(drone, terrain_current_visual);
+	for (int i = 0; i < number_of_drones; i++) {
+		drones[i].update_position(&terrain);
+		drones[i].update_visual(&drone_visual);
+		draw(drone_visual, scene);
+	}
 
-	// Update des graphiques
-	draw(drone_visual, scene);
-	draw(terrain_initial_visual, scene);
+	terrain.update_potential(&drones, terrain_current_visual);
 	draw(terrain_current_visual, scene);
 
 	if (user.gui.display_wireframe) {
-		draw_wireframe(terrain_initial_visual, scene, { 0,1,0 });
 		draw_wireframe(terrain_current_visual, scene, { 0,1,0 });
-		draw_wireframe(drone_visual, scene, { 0,1,0 });
 	}
 }
 
 void initialize_data()
 {
-	start_time = static_cast<long>(clock());
-	current_time = static_cast<long>(clock());
 
 	// Basic setups of shaders and camera
 	GLuint const shader_mesh = opengl_create_shader_program(opengl_shader_preset("mesh_vertex"), opengl_shader_preset("mesh_fragment"));
@@ -138,6 +127,13 @@ void initialize_data()
 	user.gui.display_frame = false;
 	scene.camera.distance_to_center = 2.5f;
 	scene.camera.look_at({-3,1,2}, {0,0,0.5}, {0,0,1});
+
+	for (int i = 0; i < number_of_drones; i++) drones.push_back(Drone());
+
+	drone_visual = drones[0].get_mesh_drawable();
+
+	terrain_current_visual = mesh_drawable(terrain.get_current_mesh());
+
 }
 
 void display_interface()

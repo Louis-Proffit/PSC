@@ -45,7 +45,7 @@ namespace vcl
 	void check_opengl_error(const std::string& file, const std::string& function, int line)
 	{
         GLenum error = glGetError();
-        if( error != GL_NO_ERROR )
+        if( error !=GL_NO_ERROR )
         {
             std::string msg = "OpenGL ERROR detected\n"
                     "\tFile "+file+"\n"
