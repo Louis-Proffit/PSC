@@ -94,6 +94,11 @@ public class Cluster implements RecuitInterface {
         path.removeCheckpoint(checkpoint);
     }
 
+    public void clear() {
+        currentTarget = null;
+        path.clear();
+    }
+
     @Override
     public int getSize() {
         return path.getSize();

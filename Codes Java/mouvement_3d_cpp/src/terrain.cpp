@@ -6,7 +6,7 @@ using namespace vcl;
 
 float potential_min = -0.2f;
 float potential_max = 0.03f;
-float potential_decrease = 0.0005f;
+float potential_decrease = 0.001f;
 float potential_value_at_reset = 0.03f;
 float drone_surveillance_radius = 0.05f;
 
@@ -25,6 +25,8 @@ Terrain::Terrain() {
 	hills.push_back(hill_0);
 	hill hill_1{ vec2(0.2, 0.3), 0.3, 0.1 };
 	hills.push_back(hill_1);
+	hill hill_2{ vec2(0.1, 0.1), 0.8, 0.2 };
+	hills.push_back(hill_2);
 
 	// Configuration, en bleu, du potentiel initial
 	initial_potential = initialize_terrain();
@@ -107,7 +109,7 @@ float Terrain::evaluate_terrain_live(float x, float y)
 
 vec3 Terrain::evaluate_terrain(float x, float y)
 {
-	if (x <= 0 || x >= 1 || y <= 0 || y >= 1) return vec3(x, y, 0);
+	if (x < 0 || x > 1 || y < 0 || y > 1) return vec3(x, y, 0);
 
 	assert(x > 0 & x < 1 & y > 0 & y < 1);
 

@@ -184,4 +184,11 @@ public class Path {
     public int getSize() {
         return size;
     }
+
+    public void clear() {
+        size = 0;
+        order.clear();
+        indices.clear();
+        mean = new Vector();
+    }
 }
