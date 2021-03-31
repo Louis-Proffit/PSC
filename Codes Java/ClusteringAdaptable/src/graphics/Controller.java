@@ -98,7 +98,7 @@ public class Controller {
     private static void run() {
         try {
             for (int i = 0; i < numberOfSteps; i++) {
-                TimeUnit.MILLISECONDS.sleep(200);
+                TimeUnit.MILLISECONDS.sleep(20);
                 update();
             }
         } catch (InterruptedException e) {

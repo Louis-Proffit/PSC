@@ -1,12 +1,13 @@
 
 #include "terrain.hpp"
 #include "structure.hpp"
+#include <assert.h>
 
 using namespace vcl;
 
 float potential_min = -0.2f;
 float potential_max = 0.03f;
-float potential_decrease = 0.001f;
+float potential_decrease = 0.0001f;
 float potential_value_at_reset = 0.03f;
 float drone_surveillance_radius = 0.05f;
 
@@ -89,13 +90,9 @@ mesh Terrain::get_current_mesh()
 
 float Terrain::evaluate_terrain_live(float x, float y)
 {
-
-	if (x <= 0 || x >= 1 || y <= 0 || y >= 1) return potential_value_at_reset;
 	
 	int i = int(x * n);
 	int j = int(y * m);
-
-	assert(i < n & 0 <= i & j < m & 0 <= j);
 
 	float result = 0;
 
@@ -110,8 +107,6 @@ float Terrain::evaluate_terrain_live(float x, float y)
 vec3 Terrain::evaluate_terrain(float x, float y)
 {
 	if (x < 0 || x > 1 || y < 0 || y > 1) return vec3(x, y, 0);
-
-	assert(x > 0 & x < 1 & y > 0 & y < 1);
 
 	float z = 0;
 	hill _hill;

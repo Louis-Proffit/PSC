@@ -37,7 +37,7 @@ void display_interface();
 void update_graphics();
 
 std::vector<Drone> drones;
-int number_of_drones = 20;
+int number_of_drones = 2;
 hierarchy_mesh_drawable drone_visual;
 
 Terrain terrain;
@@ -111,7 +111,7 @@ void update_graphics()
 	draw(terrain_current_visual, scene);
 
 	if (user.gui.display_wireframe) {
-		draw_wireframe(terrain_current_visual, scene, { 0,1,0 });
+		draw_wireframe(terrain_current_visual, scene, { 1,0,0 });
 	}
 }
 

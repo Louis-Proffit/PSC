@@ -20,7 +20,6 @@
 // To skip all VCL internal debug, declare VCL_NO_DEBUG as in the following line
 // #define VCL_NO_DEBUG
 
-
 #include "base/base.hpp"
 #include "containers/containers.hpp"
 #include "math/math.hpp"

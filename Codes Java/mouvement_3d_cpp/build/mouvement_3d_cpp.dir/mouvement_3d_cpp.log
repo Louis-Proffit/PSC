@@ -1,7 +1,7 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(504,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(505,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   terrain.cpp
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.cpp(24,40): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.cpp(26,40): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.cpp(28,40): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.cpp(25,40): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.cpp(27,40): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.cpp(29,40): warning C4305: 'initializing': truncation from 'double' to 'float'
   mouvement_3d_cpp.vcxproj -> C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\mouvement_3d_cpp.exe

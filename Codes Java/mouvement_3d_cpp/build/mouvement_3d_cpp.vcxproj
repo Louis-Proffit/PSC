@@ -771,7 +771,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\main.cpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\structure.hpp" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.cpp" />
-    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\build\ZERO_CHECK.vcxproj">

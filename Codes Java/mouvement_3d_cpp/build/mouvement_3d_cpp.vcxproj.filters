@@ -1341,12 +1341,6 @@
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\structure.hpp">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.hpp">
-      <Filter>src</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -1769,5 +1763,10 @@
     <Filter Include="vcl\shape\noise">
       <UniqueIdentifier>{1E1DE8E4-8D2B-30CA-AB75-B5AD5C3999B9}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\CMakeLists.txt">
+      <Filter>vcl</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>

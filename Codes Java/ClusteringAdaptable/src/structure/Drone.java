@@ -12,7 +12,7 @@ public class Drone extends MutableVector {
     /**
      * La vitesse du drone en unité de cadre par mise à jour graphique
      */
-    public static double speed = 0.01;
+    public static double speed = 0.001;
 
     /**
      * Constructeur simple

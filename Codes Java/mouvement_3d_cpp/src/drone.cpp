@@ -28,6 +28,8 @@ Drone::Drone()
 
 void Drone::update_position(Terrain *terrain)
 {
+	assert(positions.x >= 0 & position.x <= 1 & position.y >= 0 & position.y <= 1);
+
 	if (counter == frames_per_step) {
 		float score;
 		float best_score = 0.1 * measures_per_sample;
@@ -46,12 +48,27 @@ void Drone::update_position(Terrain *terrain)
 	}
 	else 
 		counter++;
+
 	position += speed * vec3(cos(direction), sin(direction), 0);
+	if (position.x < 0) {
+		position.x = -position.x;
+	}
+	else if (position.x > 1) {
+		position.x = 2 - position.x;
+	}
+	if (position.y < 0) {
+		position.y = -position.y;
+	}
+	else if (position.y > 1) {
+		position.y = 2 - position.y;
+	}
 
 
 }
 
-void Drone::update_visual(hierarchy_mesh_drawable* drone_visual) {
+void Drone::update_visual(hierarchy_mesh_drawable* drone_visual) 
+{
+
 
 	vec3 const previous_position = drone_visual->operator[]("root").transform.translate;
 	rotation bird_rotation = rotation_between_vector({ 1, 0, 0 }, normalize(position - previous_position));
@@ -103,7 +120,7 @@ hierarchy_mesh_drawable Drone::get_mesh_drawable()
 
 double Drone::evaluate_direction(float local_direction, Terrain* terrain)
 {
-	assert(local_direction > 0 & local_direction < 360);
+	assert(local_direction >= 0 & local_direction <= 2 * pi);
 
 	double result = 0;
 	float x = position.x;
@@ -114,6 +131,23 @@ double Drone::evaluate_direction(float local_direction, Terrain* terrain)
 	for (int i = 0; i < measures_per_sample; i++) {
 		x += dx;
 		y += dy;
+		if (x < 0) {
+			x = -x;
+			dx = -dx;
+		}
+		else if (x > 1) {
+			x = 2 - x;
+			dx = -dx;
+		}
+		if (y < 0) {
+			y = -y;
+			dy = -dy;
+		}
+		else if (y > 1) {
+			y = 2 - y;
+			dy = -dy;
+		}
+		if (x < 0 || x > 1 || y < 0 || y > 1) std::cout << "out of bounds" << std::endl;
 		result += terrain->evaluate_terrain_live(x, y);
 	}
 

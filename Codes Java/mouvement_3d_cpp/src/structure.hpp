@@ -15,8 +15,6 @@ class Drone {
 public:
 	static float size;
 	static float speed;
-	static int number_of_walks;
-	static int random_walk_steps;
 	static int frames_per_step;
 	static int direction_samples;
 	static int measures_per_sample;
@@ -43,6 +41,7 @@ private:
 	int n, m;
 	std::vector<hill> hills;
 	vcl::mesh current_potential;
+	vcl::buffer<bool> obstacles;
 	vcl::mesh initial_potential;
 	vcl::mesh initialize_terrain();
 	vcl::vec3 evaluate_terrain(float x, float y);
