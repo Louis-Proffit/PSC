@@ -1,0 +1,10 @@
+^C:\USERS\LOUIS PROFFIT\ONEDRIVE\GIT\PSC\CODES JAVA\3D_CLUSTERING\BUILD\CMAKEFILES\83769E27A6F9BBD5A24B4F3E0247743E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Louis Proffit/OneDrive/Git/PSC/Codes Java/3d_clustering" "-BC:/Users/Louis Proffit/OneDrive/Git/PSC/Codes Java/3d_clustering/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Louis Proffit/OneDrive/Git/PSC/Codes Java/3d_clustering/build/3d_clustering.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
