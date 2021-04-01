@@ -39,7 +39,7 @@ void draw_cluster(cluster* _cluster);
 vec3 get_color(float x);
 vec3 random_point();
 
-int number_of_drones = 5;
+int number_of_drones = 7;
 int number_of_checkpoints = 50;
 
 vec3 color_1 = vec3(143.0 / 255, 0.0 / 255, 255.0 / 255);
@@ -207,7 +207,8 @@ void draw_cluster(cluster* _cluster) {
 }
 
 vec3 get_color(float x) {
-	if (x <= 1.0 / 6) return color_1 * (6 * x) + color_2 * (1 - 6 * x);
+	std::cout << x << std::endl;
+	if (x <= 1.0 / 6) return color_1 * (6 * x - 0) + color_2 * (1 - 6 * x);
 	if (x <= 2.0 / 6) return color_2 * (6 * x - 1) + color_3 * (2 - 6 * x);
 	if (x <= 3.0 / 6) return color_3 * (6 * x - 2) + color_4 * (3 - 6 * x);
 	if (x <= 4.0 / 6) return color_4 * (6 * x - 3) + color_5 * (4 - 6 * x);

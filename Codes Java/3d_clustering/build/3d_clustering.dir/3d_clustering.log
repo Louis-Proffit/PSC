@@ -1,8 +1,5 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(504,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(505,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  structure.cpp
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\structure.cpp(13,24): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\structure.cpp(359,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\structure.cpp(359,73): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\structure.cpp(380): warning C4715: 'temperature': not all control paths return a value
+  main.cpp
+C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\main.cpp(217): warning C4715: 'get_color': not all control paths return a value
   3d_clustering.vcxproj -> C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\3d_clustering.exe

@@ -12,7 +12,7 @@ float scale = 0.05f;
 float default_drone_height = 0.1f;
 float leg_radius = 0.05;
 float leg_length = 0.5;
-float body_length = 1.0f;
+float body_length = 0.8f;
 float body_width = 0.3f;
 float body_height = 0.1f;
 float camera_radius = 0.1f;
@@ -72,18 +72,46 @@ hierarchy_mesh_drawable get_drone_mesh_drawable() {
 		vec3(body_length / 2, body_width / 2, body_height / 2),
 		vec3(body_length / 2, body_width / 2, -body_height / 2)));
 	mesh_drawable arm = mesh_drawable(mesh_primitive_cubic_grid(
-	vec3(-arm_length / 2, -arm_radius / 2, -arm_radius / 2),
-	vec3(-arm_length / 2, -arm_radius / 2, arm_radius / 2),
-	vec3(-arm_length / 2, arm_radius / 2, arm_radius / 2),
-	vec3(-arm_length / 2, arm_radius / 2, -arm_radius / 2),
-	vec3(arm_length / 2, -arm_radius / 2, -arm_radius / 2),
-	vec3(arm_length / 2, -arm_radius / 2, arm_radius / 2),
-	vec3(arm_length / 2, arm_radius / 2, arm_radius / 2),
-	vec3(arm_length / 2, arm_radius / 2, -arm_radius / 2)));
+		vec3(-arm_length / 2, -arm_radius / 2, -arm_radius / 2),
+		vec3(-arm_length / 2, -arm_radius / 2, arm_radius / 2),
+		vec3(-arm_length / 2, arm_radius / 2, arm_radius / 2),
+		vec3(-arm_length / 2, arm_radius / 2, -arm_radius / 2),
+		vec3(arm_length / 2, -arm_radius / 2, -arm_radius / 2),
+		vec3(arm_length / 2, -arm_radius / 2, arm_radius / 2),
+		vec3(arm_length / 2, arm_radius / 2, arm_radius / 2),
+		vec3(arm_length / 2, arm_radius / 2, -arm_radius / 2)));
 	mesh_drawable camera = mesh_drawable(mesh_primitive_sphere(camera_radius));
-	mesh_drawable leg = mesh_drawable(mesh_primitive_cylinder(leg_radius, { 0.7 * arm_length / 2, 0, 0 }, { 0.7 * arm_length / 2 + leg_length / 2, 0, -arm_length / 2}));
+	mesh_drawable leg = mesh_drawable(mesh_primitive_cylinder(leg_radius, { 0.7 * arm_length / 2, 0, 0 }, { 0.7 * arm_length / 2 + leg_length / 2, 0, -arm_length / 2 }));
 	mesh_drawable rotor = mesh_drawable(mesh_primitive_torus(rotor_radius_major, rotor_radius_minor));
-	
+
+	mesh logo_mesh = mesh();
+	logo_mesh.position = buffer<vec3>({
+		vec3(body_length / 2, body_width / 2, body_height / 1.9),
+		vec3(body_length / 2, -body_width / 2, body_height / 1.9),
+		vec3(-body_length / 2, -body_width / 2, body_height / 1.9),
+		vec3(-body_length / 2, body_width / 2, body_height / 1.9)
+	});
+	logo_mesh.connectivity = buffer<uint3>({ uint3(0, 1, 2), uint3(0, 2, 3) });
+	logo_mesh.uv = buffer<vec2>({
+		vec2(0, 1.5),
+		vec2(1, 1.5),
+		vec2(1, -0.5),
+		vec2(0, -0.5)
+		});
+	image_raw logo_texture;
+	try
+	{
+		logo_texture = image_load_png("assets/logo_x.png");
+	}
+	catch (const std::exception&)
+	{
+		logo_texture = image_load_png("../assets/logo_x.png");
+	}
+	GLuint const logo_texture_id = opengl_texture_to_gpu(logo_texture, GL_CLAMP_TO_EDGE, GL_CLAMP_TO_EDGE);
+	logo_mesh.fill_empty_field();
+	mesh_drawable logo_visual = mesh_drawable(logo_mesh);
+	logo_visual.texture = logo_texture_id;
+
 
 	body.shading.color = vec3(0.0f, 0.0f, 0.0f);
 	camera.shading.color = vec3(0.3f, 0.3f, 0.3f);
@@ -93,6 +121,7 @@ hierarchy_mesh_drawable get_drone_mesh_drawable() {
 
 	result.add(mesh_drawable(), "root");
 	result.add(body, "body", "root");
+	result.add(logo_visual, "logo", "body");
 	result.add(camera, "camera", "body", vec3(0.45 * body_length, 0, -0.5 * body_height));
 	result.add(arm, "first_arm", "body");
 	result.add(arm, "second_arm", "body");
