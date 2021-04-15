@@ -214,6 +214,7 @@
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\src\terrain.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\structure.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\mouvement_3d_cpp\library\vcl\base\base.hpp">

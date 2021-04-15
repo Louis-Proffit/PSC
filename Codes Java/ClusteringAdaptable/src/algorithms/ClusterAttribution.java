@@ -33,7 +33,7 @@ public class ClusterAttribution implements RecuitInterface {
     /**
      * Objet d'association des checkpoints aux clusters
      */
-    private ClusteringSolver clustering = new ClusteringHierarchical();
+    private ClusteringSolver clustering = new ClusteringKMeans();
 
     /**
      * Méthode pour ajouter un drone

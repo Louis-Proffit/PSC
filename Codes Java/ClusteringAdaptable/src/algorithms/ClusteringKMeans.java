@@ -33,9 +33,24 @@ public class ClusteringKMeans extends ClusteringSolver {
      * @param improve    : Le travail à effectuer à la fin
      */
     public void addCheckpoint(Checkpoint checkpoint, ImproveType improve) {
-        Cluster cluster = availableClusters.getFirst();
-        cluster.addCheckpoint(checkpoint);
-        association.put(checkpoint, cluster);
+        double distance;
+        double minDistance = 2.0f;
+        Cluster minCluster = null;
+        for (Cluster cluster : availableClusters) {
+            if (cluster.getSize() == 0) {
+                cluster.addCheckpoint(checkpoint);
+                association.put(checkpoint, cluster);
+                improve(improve);
+                return;
+            }
+            distance = cluster.distance(checkpoint);
+            if (distance < minDistance) {
+                minDistance = distance;
+                minCluster = cluster;
+            }
+        }
+        minCluster.addCheckpoint(checkpoint);
+        association.put(checkpoint, minCluster);
         improve(improve);
     }
 

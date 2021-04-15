@@ -39,8 +39,8 @@ void draw_cluster(cluster* _cluster);
 vec3 get_color(float x);
 vec3 random_point();
 
-int number_of_drones = 7;
-int number_of_checkpoints = 50;
+int number_of_drones = 10;
+int number_of_checkpoints = 100;
 
 vec3 color_1 = vec3(143.0 / 255, 0.0 / 255, 255.0 / 255);
 vec3 color_2 = vec3(75.0 / 255, 0.0 / 255, 130.0 / 255);

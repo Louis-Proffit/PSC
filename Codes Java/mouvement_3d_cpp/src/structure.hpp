@@ -8,6 +8,12 @@ struct hill {
 	float height;
 };
 
+struct obstacle {
+	vcl::vec2 center;
+	float radius;
+	bool is_in_bounds(vcl::vec2 position);
+};
+
 class Terrain;
 
 class Drone {
@@ -39,12 +45,14 @@ class Terrain {
 
 private:
 	int n, m;
-	std::vector<hill> hills;
+	std::vector<hill> hills_list;
+	std::vector<obstacle> obstacles_list;
 	vcl::mesh current_potential;
-	vcl::buffer<bool> obstacles;
+	vcl::buffer<int> obstacles;
 	vcl::mesh initial_potential;
-	vcl::mesh initialize_terrain();
+	void initialize_terrain();
 	vcl::vec3 evaluate_terrain(float x, float y);
+	vcl::vec3 get_color_from_height(int i, int j);
 
 public:
 

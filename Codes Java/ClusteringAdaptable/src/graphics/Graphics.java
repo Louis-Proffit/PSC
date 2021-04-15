@@ -16,7 +16,7 @@ import structure.Vector;
  * @author Louis Proffit
  * @version 1.0
  */
-public class Graphics {
+public class Graphics implements GraphicsInterface {
 
     /**
      * Objet graphique
@@ -26,9 +26,9 @@ public class Graphics {
     /**
      * Constructeur simple sur 2000 * 2000 pixels
      */
-    public Graphics() {
+    public Graphics(int width, int height) {
         draw = new Draw();
-        draw.setCanvasSize(2000, 2000);
+        draw.setCanvasSize(width, height);
     }
 
     /**

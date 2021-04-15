@@ -37,7 +37,7 @@ void display_interface();
 void update_graphics();
 
 std::vector<Drone> drones;
-int number_of_drones = 2;
+int number_of_drones = 4;
 hierarchy_mesh_drawable drone_visual;
 
 Terrain terrain;
@@ -130,7 +130,7 @@ void initialize_data()
 
 	for (int i = 0; i < number_of_drones; i++) drones.push_back(Drone());
 
-	drone_visual = drones[0].get_mesh_drawable();
+	drone_visual = Drone().get_mesh_drawable();
 
 	terrain_current_visual = mesh_drawable(terrain.get_current_mesh());
 

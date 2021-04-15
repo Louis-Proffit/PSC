@@ -93,7 +93,7 @@ public class TSPRecuit {
 	public static enum DecroissanceType {
 		/**
 		 * Décroissance logarithmique
-		 */
+	s	 */
 		LOG,
 
 		/**

@@ -19,7 +19,7 @@ public class Cluster implements RecuitInterface {
      * La cible en cours dans le cluster
      */
     private Checkpoint currentTarget = null;
-
+    
     /**
      * Le chemin du cluster
      */
