@@ -37,6 +37,7 @@ private:
 	float direction;
 	vcl::vec3 position;
 	double Drone::evaluate_direction(float direction, Terrain* terrain);
+	bool get_position_direction_after(vcl::vec2& position, vcl::vec2& direction, bool has_bounced, Terrain* terrain);
 };
 
 class Drone;
@@ -46,7 +47,6 @@ class Terrain {
 private:
 	int n, m;
 	std::vector<hill> hills_list;
-	std::vector<obstacle> obstacles_list;
 	vcl::mesh current_potential;
 	vcl::buffer<int> obstacles;
 	vcl::mesh initial_potential;
@@ -57,6 +57,7 @@ private:
 public:
 
 	Terrain();
+	std::vector<obstacle> obstacles_list;
 	void update_potential(std::vector<Drone> *drones, vcl::mesh_drawable& terrain_visual);
 	vcl::mesh get_initial_mesh();
 	vcl::mesh get_current_mesh();

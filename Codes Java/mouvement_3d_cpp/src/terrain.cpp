@@ -4,8 +4,9 @@ using namespace vcl;
 
 float potential_min = -0.2f;
 float potential_max = 0.03f;
-float potential_decrease = 0.0001f;
-float potential_value_at_reset = 0.03f;
+float potential_decrease = 0.0002f;
+float potential_value_at_reset = 0.00f;
+float obstacle_potential = 0.1f;
 float drone_surveillance_radius = 0.05f;
 
 // Colors
@@ -18,19 +19,21 @@ Terrain::Terrain() {
 
 	// Création des colines
 	hill hill_0{ vec2(0.5, 0.8), 0.1, 0.2 };
-	hill hill_1{ vec2(0.2, 0.5), 0.4, 0.4 };
+	hill hill_1{ vec2(0.2, 0.5), 0.4, 0.5 };
 	hill hill_2{ vec2(0.1, 0.1), 0.2, 0.2 };
 	hills_list.push_back(hill_1);
 	hills_list.push_back(hill_0);
 	hills_list.push_back(hill_2);
 
 	// Création des obstacles
-	obstacle obstacle_1{ vec2(0.2, 0.9), 0.2 };
+	obstacle obstacle_1{ vec2(0.2, 0.9), 0.1 };
 	obstacle obstacle_2{ vec2(0.4, 0.4), 0.1 };
-	obstacle obstacle_3{ vec2(0.9, 0.2), 0.15 };
+	obstacle obstacle_3{ vec2(0.2, 0.2), 0.1 };
+	obstacle obstacle_4{ vec2(0.9, 0.2), 0.15 };
 	obstacles_list.push_back(obstacle_1);
 	obstacles_list.push_back(obstacle_2);
 	obstacles_list.push_back(obstacle_3);
+	obstacles_list.push_back(obstacle_4);
 
 	obstacles.resize((n + 1) * (m + 1));
 	for (int i = 0; i <= n; i++) {
@@ -140,7 +143,7 @@ void Terrain::initialize_terrain()
 			y = float(j) / m;
 			initial_potential.position[i * (m + 1) + j] = evaluate_terrain(x, y);
 			current_potential.position[i * (m + 1) + j] = evaluate_terrain(x, y);
-			if (obstacles[i * (m + 1) + j]) current_potential.position[i * (m + 1) + j].z = 0;
+			if (obstacles[i * (m + 1) + j]) current_potential.position[i * (m + 1) + j].z = obstacle_potential;
 		}
 	}
 	for (int i = 0; i < n; i++) {

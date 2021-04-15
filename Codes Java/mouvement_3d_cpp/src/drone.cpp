@@ -36,7 +36,7 @@ void Drone::update_position(Terrain *terrain)
 		float best_direction = 0;
 		float local_direction = 0;
 		for (int i = 0; i <= direction_samples; i++) {
-			local_direction = float(i) / direction_samples * 2 * pi;
+			local_direction = -pi + 2 * float(i) / direction_samples * pi;
 			score = evaluate_direction(local_direction, terrain);
 			if (score < best_score) {
 				best_score = score;
@@ -62,7 +62,12 @@ void Drone::update_position(Terrain *terrain)
 	else if (position.y > 1) {
 		position.y = 2 - position.y;
 	}
-
+	for (obstacle _obstacle : terrain->obstacles_list) {
+		if (_obstacle.is_in_bounds(position.xy())) {
+			position -= speed * vec3(cos(direction), sin(direction), 0);
+			direction = pi - direction;
+		}
+	}
 
 }
 
@@ -123,34 +128,57 @@ double Drone::evaluate_direction(float local_direction, Terrain* terrain)
 	assert(local_direction >= 0 & local_direction <= 2 * pi);
 
 	double result = 0;
-	float x = position.x;
-	float y = position.y;
-	float dx = cos(local_direction) * sample_distance / measures_per_sample;
-	float dy = sin(local_direction) * sample_distance / measures_per_sample;
+	vec2 direction = vec2(cos(local_direction), sin(local_direction)) * sample_distance / measures_per_sample;
+	vec2 position_copy = vec2(position.x, position.y);
 
 	for (int i = 0; i < measures_per_sample; i++) {
-		x += dx;
-		y += dy;
-		if (x < 0) {
-			x = -x;
-			dx = -dx;
-		}
-		else if (x > 1) {
-			x = 2 - x;
-			dx = -dx;
-		}
-		if (y < 0) {
-			y = -y;
-			dy = -dy;
-		}
-		else if (y > 1) {
-			y = 2 - y;
-			dy = -dy;
-		}
-		if (x < 0 || x > 1 || y < 0 || y > 1) std::cout << "out of bounds" << std::endl;
-		result += terrain->evaluate_terrain_live(x, y);
+		if (!get_position_direction_after(position_copy, direction, false, terrain)) return 0;
+		result += terrain->evaluate_terrain_live(position_copy.x, position_copy.y);
 	}
 
 	return result;
+}
 
+bool Drone::get_position_direction_after(vec2& position, vec2& direction, bool has_bounced, Terrain* terrain)
+{
+	position += direction;
+
+	// Checks if it is in bounds
+	if (position.x < 0) {
+		if (has_bounced) return false;
+		has_bounced = true;
+		position.x = -position.x;
+		direction.x = -direction.x;
+	}
+	else if (position.x > 1) {
+		if (has_bounced) return false;
+		has_bounced = true;
+		position.x = 2 - position.x;
+		direction.x = -direction.x;
+	}
+	if (position.y < 0) {
+		if (has_bounced) return false;
+		has_bounced = true;
+		position.y = -position.y;
+		direction.y = -direction.y;
+	}
+	else if (position.y > 1) {
+		if (has_bounced) return false;
+		has_bounced = true;
+		position.y = 2 - position.y;
+		direction.y = -direction.y;
+	}
+
+	// Checks if it is in an obstacle
+	for (obstacle _obstacle : terrain->obstacles_list) {
+		if (_obstacle.is_in_bounds(position)) {
+			if (has_bounced) return false;
+			has_bounced = true;
+			direction.x = -direction.x;
+			direction.y = -direction.y;
+			position += direction;
+		}
+	}
+
+	return true;
 }
