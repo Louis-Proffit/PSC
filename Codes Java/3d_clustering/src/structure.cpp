@@ -19,7 +19,7 @@ float camera_radius = 0.1f;
 
 
 /* Constants for drone dynamics*/
-float drone_speed = 0.00f;
+float drone_speed = 0.01f;
 
 /* Constants for recuit */
 decroissance_type _decroissance_type = decroissance_type::N;
