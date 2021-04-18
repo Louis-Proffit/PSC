@@ -431,7 +431,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\vcl\math\affine\affine_rts\affine_rts.hpp" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\vcl\math\frame\frame.cpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\vcl\math\frame\frame.hpp" />
-    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\vcl\math\interpolation\interpolation.cpp" />
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\vcl\math\interpolation\interpolation.cpp">
+      <ObjectFileName>$(IntDir)/library/vcl/math/interpolation/interpolation.cpp.obj</ObjectFileName>
+    </ClCompile>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\vcl\math\interpolation\interpolation.hpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\vcl\math\math.hpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\vcl\math\matrix\matrix.hpp" />
@@ -767,6 +769,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\third_party\src\lodepng\lodepng.h" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\third_party\src\simplexnoise\simplexnoise1234.cpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\third_party\src\simplexnoise\simplexnoise1234.hpp" />
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\interpolation.cpp">
+      <ObjectFileName>$(IntDir)/src/interpolation.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\interpolation.hpp" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\main.cpp" />
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\structure.cpp" />
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\structure.hpp" />

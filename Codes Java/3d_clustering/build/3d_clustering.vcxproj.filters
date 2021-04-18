@@ -205,6 +205,9 @@
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\third_party\src\simplexnoise\simplexnoise1234.cpp">
       <Filter>third_party\src\simplexnoise</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\interpolation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -1334,6 +1337,9 @@
     </ClInclude>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\library\third_party\src\simplexnoise\simplexnoise1234.hpp">
       <Filter>third_party\src\simplexnoise</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\interpolation.hpp">
+      <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\structure.hpp">
       <Filter>src</Filter>

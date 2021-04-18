@@ -1,4 +1,5 @@
 # include "vcl/vcl.hpp"
+# include "interpolation.hpp" 
 
 enum class decroissance_type 
 {
@@ -23,7 +24,7 @@ public:
 class drone 
 {
 public:
-	void move(vcl::vec3 target);
+	void move(vcl::vec3 new_position);
 	vcl::vec3 get_position();
 	void set_position(vcl::vec3 _position);
 	drone(vcl::vec3 position);
@@ -43,13 +44,14 @@ public:
 	checkpoint* get_checkpoint_before(checkpoint* _checkpoint);
 	checkpoint* get_checkpoint_at_index(int index);
 	int get_checkpoint_index(checkpoint* _checkpoint);
-	std::vector<checkpoint*> get_checkpoints_ordered();
+	vcl::buffer<vcl::vec3> get_positions_ordered();
 	void add_checkpoint(checkpoint* _checkpoint);
 	void remove_checkpoint(checkpoint* _checkpoint);
 	void swap_order(int first_index, int second_index);
 	int get_size();
 	void clear();
-
+	vcl::vec3 get_next_position();
+	void set_interpolator();
 
 
 private :
@@ -57,6 +59,7 @@ private :
 	std::map<int, checkpoint*> order;
 	std::map<checkpoint*, int> indices;
 	vcl::vec3 mean;
+	interpolator _interpolator;
 
 	void remove_last_checkpoint();
 };
@@ -68,9 +71,6 @@ public:
 	cluster();
 	void improve_path();
 	double distance(vcl::vec3 _vector);
-	checkpoint* get_current_target();
-	void move_target_forward();
-	std::vector<checkpoint*> get_checkpoints_ordered();
 	void add_checkpoint(checkpoint* _checkpoint);
 	void remove_checkpoint(checkpoint* _checkpoint);
 	void clear();
@@ -78,9 +78,11 @@ public:
 	std::pair<int, int> modification_function();
 	double improvement_function(std::pair<int, int> modification);
 	void commit_function(std::pair<int, int> modification);
+	void set_interpolator();
+	vcl::buffer<vcl::vec3> get_positions_ordered();
+	vcl::vec3 get_next_position();
 
 private:
-	checkpoint* current_target;
 	path _path;
 };
 
@@ -112,6 +114,7 @@ public:
 	std::vector<drone*> get_drones();
 	void move();
 	int get_size();
+	void set_interpolators();
 
 };
 

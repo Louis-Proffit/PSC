@@ -43,9 +43,9 @@ drone::drone(vec3 _position)
 	this->position = _position;
 }
 
-void drone::move(vec3 target) 
+void drone::move(vec3 new_position) 
 {
-	this->position += normalize(target - position) * drone_speed;
+	this->position = new_position;
 }
 
 vec3 drone::get_position() 
@@ -145,7 +145,8 @@ hierarchy_mesh_drawable get_drone_mesh_drawable() {
 	return result;
 }
 
-path::path() {
+path::path() 
+{
 	this->mean = vec3(0, 0, 0);
 	this->size = 0;
 	this->order = std::map<int, checkpoint*>();
@@ -206,12 +207,12 @@ int path::get_checkpoint_index(checkpoint* _checkpoint)
 	return indices[_checkpoint];
 }
 
-std::vector<checkpoint*> path::get_checkpoints_ordered()
+buffer<vec3> path::get_positions_ordered()
 {
-	std::vector<checkpoint*> result = std::vector<checkpoint*>(size);
+	buffer<vec3> result = buffer<vec3>(size);
 	
 	for (int i = 0; i < size; i++) {
-		result[i] = order[i];
+		result[i] = order[i]->get_position();
 	}
 
 	return result;
@@ -243,6 +244,15 @@ void path::swap_order(int first_index, int second_index)
 
 }
 
+vec3 path::get_next_position() 
+{
+	return _interpolator.interpolate();
+}
+
+void path::set_interpolator() {
+	_interpolator.set_key_positions(get_positions_ordered());
+}
+
 int path::get_size()
 {
 	return size;
@@ -267,7 +277,6 @@ void path::remove_last_checkpoint()
 
 cluster::cluster() 
 {
-	this->current_target = NULL;
 	this->_path = path();
 }
 
@@ -281,37 +290,42 @@ double cluster::distance(vec3 _vector)
 	return _path.distance(_vector);
 }
 
-checkpoint* cluster::get_current_target()
+/*checkpoint* cluster::get_current_target()
 {
 	return current_target;
-}
+}*/
 
-void cluster::move_target_forward()
+/*void cluster::move_target_forward()
 {
 	current_target = _path.get_checkpoint_after(current_target);
-}
+}*/
 
-std::vector<checkpoint*> cluster::get_checkpoints_ordered()
+/*std::vector<checkpoint*> cluster::get_checkpoints_ordered()
 {
 	return _path.get_checkpoints_ordered();
+}*/
+
+void cluster::set_interpolator() 
+{
+	_path.set_interpolator();
+}
+
+vec3 cluster::get_next_position() {
+	return _path.get_next_position();
 }
 
 void cluster::add_checkpoint(checkpoint* _checkpoint)
 {
-	if (current_target == NULL) current_target = _checkpoint;
 	_path.add_checkpoint(_checkpoint);
 }
 
 void cluster::remove_checkpoint(checkpoint* _checkpoint)
 {
-	if (current_target == _checkpoint)
-		current_target = _path.get_checkpoint_after(_checkpoint);
 	_path.remove_checkpoint(_checkpoint);
 }
 
 void cluster::clear()
 {
-	current_target = NULL;
 	_path.clear();
 }
 
@@ -370,6 +384,11 @@ void cluster::commit_function(std::pair<int, int> swap)
 			}
 		}
 	}
+}
+
+
+buffer<vec3> cluster::get_positions_ordered() {
+	return _path.get_positions_ordered();
 }
 
 void improve_recuit(cluster* _cluster)
@@ -449,14 +468,7 @@ void cluster_attribution::move()
 	cluster* _cluster;
 	for (drone* _drone : drones) {
 		_cluster = association[_drone];
-		_target = _cluster->get_current_target();
-		if (_target == NULL) continue;
-		else if (norm(_target->get_position() - _drone->get_position()) < drone_speed) {
-			_drone->set_position(_target->get_position());
-			_cluster->move_target_forward();
-		}
-		else
-			_drone->move(_target->get_position());
+		_drone->move(_cluster->get_next_position());
 	}
 }
 
@@ -482,8 +494,15 @@ void clustering_k_means::add_cluster(cluster* _cluster, improve_type _improve_ty
 	improve(_improve_type);
 }
 
+
+void cluster_attribution::set_interpolators() 
+{
+	for (drone* _drone : drones) association[_drone]->set_interpolator();
+}
+
 void clustering_k_means::improve(improve_type _improve_type)
 {
+
 	switch (_improve_type) {
 	case(improve_type::NONE):
 		return;

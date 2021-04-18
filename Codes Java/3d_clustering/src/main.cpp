@@ -152,10 +152,11 @@ void initialize_data()
 		_cluster_attribution.add_checkpoint(_checkpoint, improve_type::NONE);
 	}
 	_cluster_attribution.improve(improve_type::COMPLETE);
+	_cluster_attribution.set_interpolators();
 
 	drone_visual = get_drone_mesh_drawable();
 	checkpoint_visual = mesh_drawable(mesh_primitive_sphere(0.02f));
-	cluster_visual = curve_drawable();
+
 
 }
 
@@ -200,14 +201,13 @@ void opengl_uniform(GLuint shader, scene_environment const& current_scene)
 }
 
 void draw_cluster(cluster* _cluster) {
-	for (checkpoint* checkpoint : _cluster->get_checkpoints_ordered()) {
-		checkpoint_visual.transform.translate = checkpoint->get_position();
+	for (vec3 position : _cluster->get_positions_ordered()) {
+		checkpoint_visual.transform.translate = position;
 		draw(checkpoint_visual, scene);
 	}
 }
 
 vec3 get_color(float x) {
-	std::cout << x << std::endl;
 	if (x <= 1.0 / 6) return color_1 * (6 * x - 0) + color_2 * (1 - 6 * x);
 	if (x <= 2.0 / 6) return color_2 * (6 * x - 1) + color_3 * (2 - 6 * x);
 	if (x <= 3.0 / 6) return color_3 * (6 * x - 2) + color_4 * (3 - 6 * x);
