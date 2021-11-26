@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\build\CMakeFiles\a9a98a83cb287fd433f8a732a739fe28\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B13ADDD6-0FCB-3182-91F4-5A6CD7ED2F15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

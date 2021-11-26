@@ -1,0 +1,10 @@
+^C:\USERS\LOUIS PROFFIT\ONEDRIVE\GIT\PSC\CODES\POTENTIEL_CPP\BUILD\CMAKEFILES\A9A98A83CB287FD433F8A732A739FE28\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Louis Proffit/OneDrive/Git/PSC/Codes/Potentiel_cpp" "-BC:/Users/Louis Proffit/OneDrive/Git/PSC/Codes/Potentiel_cpp/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Louis Proffit/OneDrive/Git/PSC/Codes/Potentiel_cpp/build/Potentiel_cpp.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

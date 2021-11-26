@@ -1,0 +1,1773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\basic_types\basic_types.cpp">
+      <Filter>vcl\base\basic_types</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\error\error.cpp">
+      <Filter>vcl\base\error</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\rand\rand.cpp">
+      <Filter>vcl\base\rand</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\string\string.cpp">
+      <Filter>vcl\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer\test\test_buffer.cpp">
+      <Filter>vcl\containers\buffer\test</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer_stack\special_types\special_types.cpp">
+      <Filter>vcl\containers\buffer_stack\special_types</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer_stack\test\test_buffer_stack.cpp">
+      <Filter>vcl\containers\buffer_stack\test</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\grid\test\test_grid.cpp">
+      <Filter>vcl\containers\grid\test</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\grid_stack\grid_stack_2D\test\test_grid_stack_2D.cpp">
+      <Filter>vcl\containers\grid_stack\grid_stack_2D\test</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\offset_grid\offset_grid.cpp">
+      <Filter>vcl\containers\offset_grid</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\curve_drawable\curve_drawable.cpp">
+      <Filter>vcl\display\drawable\curve_drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable.cpp">
+      <Filter>vcl\display\drawable\hierarchy_mesh_drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node\hierarchy_mesh_drawable_node.cpp">
+      <Filter>vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\mesh_drawable\mesh_drawable.cpp">
+      <Filter>vcl\display\drawable\mesh_drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\mesh_normal_drawable\mesh_normal_drawable.cpp">
+      <Filter>vcl\display\drawable\mesh_normal_drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\mesh_wireframe_drawable\mesh_wireframe_drawable.cpp">
+      <Filter>vcl\display\drawable\mesh_wireframe_drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\segments_drawable\segments_drawable.cpp">
+      <Filter>vcl\display\drawable\segments_drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\shading_parameters\shading_parameters.cpp">
+      <Filter>vcl\display\drawable\shading_parameters</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\trajectory_drawable\trajectory_drawable.cpp">
+      <Filter>vcl\display\drawable\trajectory_drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\image\image.cpp">
+      <Filter>vcl\display\image</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\debug\debug.cpp">
+      <Filter>vcl\display\opengl\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\helper\opengl_helper.cpp">
+      <Filter>vcl\display\opengl\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\shaders\shaders.cpp">
+      <Filter>vcl\display\opengl\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\texture\texture.cpp">
+      <Filter>vcl\display\opengl\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\uniform\uniform.cpp">
+      <Filter>vcl\display\opengl\uniform</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\window\window.cpp">
+      <Filter>vcl\display\window</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\files\files.cpp">
+      <Filter>vcl\files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\camera_around_center\camera_around_center.cpp">
+      <Filter>vcl\interaction\camera\camera_around_center</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\camera_base\camera_base.cpp">
+      <Filter>vcl\interaction\camera\camera_base</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\camera_head\camera_head.cpp">
+      <Filter>vcl\interaction\camera\camera_head</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\camera_spherical_coordinates\camera_spherical_coordinates.cpp">
+      <Filter>vcl\interaction\camera\camera_spherical_coordinates</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\common_functions\common_functions.cpp">
+      <Filter>vcl\interaction\camera\common_functions</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\glfw_interaction\glfw_interaction.cpp">
+      <Filter>vcl\interaction\glfw_interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\gui\gui.cpp">
+      <Filter>vcl\interaction\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\timer\timer_basic\timer_basic.cpp">
+      <Filter>vcl\interaction\timer\timer_basic</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\timer\timer_event_periodic\timer_event_periodic.cpp">
+      <Filter>vcl\interaction\timer\timer_event_periodic</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\timer\timer_fps\timer_fps.cpp">
+      <Filter>vcl\interaction\timer\timer_fps</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\timer\timer_interval\timer_interval.cpp">
+      <Filter>vcl\interaction\timer\timer_interval</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\tracker\velocity_tracker\velocity_tracker.cpp">
+      <Filter>vcl\interaction\tracker\velocity_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\affine\affine_rt\affine_rt.cpp">
+      <Filter>vcl\math\affine\affine_rt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\affine\affine_rts\affine_rts.cpp">
+      <Filter>vcl\math\affine\affine_rts</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\frame\frame.cpp">
+      <Filter>vcl\math\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\interpolation\interpolation.cpp">
+      <Filter>vcl\math\interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\matrix\matrix_stack\special_types\definition\special_types.cpp">
+      <Filter>vcl\math\matrix\matrix_stack\special_types\definition</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\matrix\matrix_stack\special_types\mat4\mat4.cpp">
+      <Filter>vcl\math\matrix\matrix_stack\special_types\mat4</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\matrix\test\test_matrix_stack.cpp">
+      <Filter>vcl\math\matrix\test</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\projection\projection.cpp">
+      <Filter>vcl\math\projection</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\quaternion\quaternion.cpp">
+      <Filter>vcl\math\quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\rotation\rotation.cpp">
+      <Filter>vcl\math\rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\rotation\test\test_rotation.cpp">
+      <Filter>vcl\math\rotation\test</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\vec_mat\test\test_vec_mat.cpp">
+      <Filter>vcl\math\vec_mat\test</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\vec_mat\vec_mat.cpp">
+      <Filter>vcl\math\vec_mat</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shaders_preset\shaders_preset.cpp">
+      <Filter>vcl\shaders_preset</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\curve\curve.cpp">
+      <Filter>vcl\shape\curve</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\intersection\intersection.cpp">
+      <Filter>vcl\shape\intersection</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\mesh\loader\obj\obj.cpp">
+      <Filter>vcl\shape\mesh\loader\obj</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\mesh\primitive\mesh_primitive.cpp">
+      <Filter>vcl\shape\mesh\primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\mesh\structure\mesh.cpp">
+      <Filter>vcl\shape\mesh\structure</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\noise\noise.cpp">
+      <Filter>vcl\shape\noise</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\glad\src\glad.cpp">
+      <Filter>third_party\src\glad\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui.cpp">
+      <Filter>third_party\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui_demo.cpp">
+      <Filter>third_party\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui_draw.cpp">
+      <Filter>third_party\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui_impl_glfw.cpp">
+      <Filter>third_party\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui_impl_opengl3.cpp">
+      <Filter>third_party\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui_widgets.cpp">
+      <Filter>third_party\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\lodepng\lodepng.cpp">
+      <Filter>third_party\src\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\simplexnoise\simplexnoise1234.cpp">
+      <Filter>third_party\src\simplexnoise</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\src\drone.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\src\structure.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\src\terrain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\base.hpp">
+      <Filter>vcl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\basic_types\basic_types.hpp">
+      <Filter>vcl\base\basic_types</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\error\error.hpp">
+      <Filter>vcl\base\error</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\rand\rand.hpp">
+      <Filter>vcl\base\rand</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\stl\stl.hpp">
+      <Filter>vcl\base\stl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\string\string.hpp">
+      <Filter>vcl\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\base\types\types.hpp">
+      <Filter>vcl\base\types</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer\buffer.hpp">
+      <Filter>vcl\containers\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer\test\test_buffer.hpp">
+      <Filter>vcl\containers\buffer\test</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer_stack\buffer_stack.hpp">
+      <Filter>vcl\containers\buffer_stack</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer_stack\implementation\buffer_stack.hpp">
+      <Filter>vcl\containers\buffer_stack\implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer_stack\implementation\buffer_stack2.hpp">
+      <Filter>vcl\containers\buffer_stack\implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer_stack\implementation\buffer_stack3.hpp">
+      <Filter>vcl\containers\buffer_stack\implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer_stack\implementation\buffer_stack4.hpp">
+      <Filter>vcl\containers\buffer_stack\implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer_stack\special_types\special_types.hpp">
+      <Filter>vcl\containers\buffer_stack\special_types</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\buffer_stack\test\test_buffer_stack.hpp">
+      <Filter>vcl\containers\buffer_stack\test</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\containers.hpp">
+      <Filter>vcl\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\grid\grid.hpp">
+      <Filter>vcl\containers\grid</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\grid\grid_2D\grid_2D.hpp">
+      <Filter>vcl\containers\grid\grid_2D</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\grid\grid_3D\grid_3D.hpp">
+      <Filter>vcl\containers\grid\grid_3D</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\grid\test\test_grid.hpp">
+      <Filter>vcl\containers\grid\test</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\grid_stack\grid_stack.hpp">
+      <Filter>vcl\containers\grid_stack</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\grid_stack\grid_stack_2D\grid_stack_2D.hpp">
+      <Filter>vcl\containers\grid_stack\grid_stack_2D</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\grid_stack\grid_stack_2D\test\test_grid_stack_2D.hpp">
+      <Filter>vcl\containers\grid_stack\grid_stack_2D\test</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\containers\offset_grid\offset_grid.hpp">
+      <Filter>vcl\containers\offset_grid</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\display.hpp">
+      <Filter>vcl\display</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\curve_drawable\curve_drawable.hpp">
+      <Filter>vcl\display\drawable\curve_drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\drawable.hpp">
+      <Filter>vcl\display\drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable.hpp">
+      <Filter>vcl\display\drawable\hierarchy_mesh_drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node\hierarchy_mesh_drawable_node.hpp">
+      <Filter>vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\mesh_drawable\mesh_drawable.hpp">
+      <Filter>vcl\display\drawable\mesh_drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\mesh_normal_drawable\mesh_normal_drawable.hpp">
+      <Filter>vcl\display\drawable\mesh_normal_drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\mesh_wireframe_drawable\mesh_wireframe_drawable.hpp">
+      <Filter>vcl\display\drawable\mesh_wireframe_drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\segments_drawable\segments_drawable.hpp">
+      <Filter>vcl\display\drawable\segments_drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\shading_parameters\shading_parameters.hpp">
+      <Filter>vcl\display\drawable\shading_parameters</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\drawable\trajectory_drawable\trajectory_drawable.hpp">
+      <Filter>vcl\display\drawable\trajectory_drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\image\image.hpp">
+      <Filter>vcl\display\image</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\debug\debug.hpp">
+      <Filter>vcl\display\opengl\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\glad\glad.hpp">
+      <Filter>vcl\display\opengl\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\helper\opengl_helper.hpp">
+      <Filter>vcl\display\opengl\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\opengl.hpp">
+      <Filter>vcl\display\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\shaders\shaders.hpp">
+      <Filter>vcl\display\opengl\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\texture\texture.hpp">
+      <Filter>vcl\display\opengl\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\opengl\uniform\uniform.hpp">
+      <Filter>vcl\display\opengl\uniform</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\display\window\window.hpp">
+      <Filter>vcl\display\window</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\files\files.hpp">
+      <Filter>vcl\files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\camera.hpp">
+      <Filter>vcl\interaction\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\camera_around_center\camera_around_center.hpp">
+      <Filter>vcl\interaction\camera\camera_around_center</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\camera_base\camera_base.hpp">
+      <Filter>vcl\interaction\camera\camera_base</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\camera_head\camera_head.hpp">
+      <Filter>vcl\interaction\camera\camera_head</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\camera_spherical_coordinates\camera_spherical_coordinates.hpp">
+      <Filter>vcl\interaction\camera\camera_spherical_coordinates</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\camera\common_functions\common_functions.hpp">
+      <Filter>vcl\interaction\camera\common_functions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\glfw_interaction\glfw_interaction.hpp">
+      <Filter>vcl\interaction\glfw_interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\gui\gui.hpp">
+      <Filter>vcl\interaction\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\interaction.hpp">
+      <Filter>vcl\interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\timer\timer.hpp">
+      <Filter>vcl\interaction\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\timer\timer_basic\timer_basic.hpp">
+      <Filter>vcl\interaction\timer\timer_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\timer\timer_event_periodic\timer_event_periodic.hpp">
+      <Filter>vcl\interaction\timer\timer_event_periodic</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\timer\timer_fps\timer_fps.hpp">
+      <Filter>vcl\interaction\timer\timer_fps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\timer\timer_interval\timer_interval.hpp">
+      <Filter>vcl\interaction\timer\timer_interval</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\tracker\tracker.hpp">
+      <Filter>vcl\interaction\tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\interaction\tracker\velocity_tracker\velocity_tracker.hpp">
+      <Filter>vcl\interaction\tracker\velocity_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\affine\affine.hpp">
+      <Filter>vcl\math\affine</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\affine\affine_rt\affine_rt.hpp">
+      <Filter>vcl\math\affine\affine_rt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\affine\affine_rts\affine_rts.hpp">
+      <Filter>vcl\math\affine\affine_rts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\frame\frame.hpp">
+      <Filter>vcl\math\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\interpolation\interpolation.hpp">
+      <Filter>vcl\math\interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\math.hpp">
+      <Filter>vcl\math</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\matrix\matrix.hpp">
+      <Filter>vcl\math\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\matrix\matrix_stack\matrix_stack.hpp">
+      <Filter>vcl\math\matrix\matrix_stack</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\matrix\matrix_stack\special_types\definition\special_types.hpp">
+      <Filter>vcl\math\matrix\matrix_stack\special_types\definition</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\matrix\matrix_stack\special_types\mat4\mat4.hpp">
+      <Filter>vcl\math\matrix\matrix_stack\special_types\mat4</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\matrix\matrix_stack\special_types\special_types.hpp">
+      <Filter>vcl\math\matrix\matrix_stack\special_types</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\matrix\test\test_matrix_stack.hpp">
+      <Filter>vcl\math\matrix\test</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\projection\projection.hpp">
+      <Filter>vcl\math\projection</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\quaternion\quaternion.hpp">
+      <Filter>vcl\math\quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\rotation\rotation.hpp">
+      <Filter>vcl\math\rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\rotation\test\test_rotation.hpp">
+      <Filter>vcl\math\rotation\test</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\vec_mat\test\test_vec_mat.hpp">
+      <Filter>vcl\math\vec_mat\test</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\math\vec_mat\vec_mat.hpp">
+      <Filter>vcl\math\vec_mat</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shaders_preset\shaders_preset.hpp">
+      <Filter>vcl\shaders_preset</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\curve\curve.hpp">
+      <Filter>vcl\shape\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\intersection\intersection.hpp">
+      <Filter>vcl\shape\intersection</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\mesh\loader\loader.hpp">
+      <Filter>vcl\shape\mesh\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\mesh\loader\obj\obj.hpp">
+      <Filter>vcl\shape\mesh\loader\obj</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\mesh\mesh.hpp">
+      <Filter>vcl\shape\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\mesh\primitive\mesh_primitive.hpp">
+      <Filter>vcl\shape\mesh\primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\mesh\structure\mesh.hpp">
+      <Filter>vcl\shape\mesh\structure</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\noise\noise.hpp">
+      <Filter>vcl\shape\noise</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\shape\shape.hpp">
+      <Filter>vcl\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\vcl\vcl.hpp">
+      <Filter>vcl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Cholesky\LDLT.h">
+      <Filter>third_party\src\eigen\Eigen\src\Cholesky</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Cholesky\LLT.h">
+      <Filter>third_party\src\eigen\Eigen\src\Cholesky</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Cholesky\LLT_LAPACKE.h">
+      <Filter>third_party\src\eigen\Eigen\src\Cholesky</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\CholmodSupport\CholmodSupport.h">
+      <Filter>third_party\src\eigen\Eigen\src\CholmodSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Array.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\ArrayBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\ArrayWrapper.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Assign.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\AssignEvaluator.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Assign_MKL.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\BandMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Block.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\BooleanRedux.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\CommaInitializer.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\ConditionEstimator.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\CoreEvaluators.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\CoreIterators.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\CwiseBinaryOp.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\CwiseNullaryOp.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\CwiseTernaryOp.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\CwiseUnaryOp.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\CwiseUnaryView.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\DenseBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\DenseCoeffsBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\DenseStorage.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Diagonal.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\DiagonalMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\DiagonalProduct.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Dot.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\EigenBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\ForceAlignedAccess.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Fuzzy.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\GeneralProduct.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\GenericPacketMath.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\GlobalFunctions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\IO.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Inverse.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Map.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\MapBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\MathFunctions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\MathFunctionsImpl.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Matrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\MatrixBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\NestByValue.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\NoAlias.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\NumTraits.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\PermutationMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\PlainObjectBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Product.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\ProductEvaluators.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Random.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Redux.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Ref.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Replicate.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\ReturnByValue.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Reverse.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Select.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\SelfAdjointView.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\SelfCwiseBinaryOp.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Solve.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\SolveTriangular.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\SolverBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\StableNorm.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Stride.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Swap.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Transpose.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Transpositions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\TriangularMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\VectorBlock.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\VectorwiseOp.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\Visitor.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\AVX\Complex.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\AVX\MathFunctions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\AVX\PacketMath.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\AVX\TypeCasting.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\AVX512\MathFunctions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\AVX512</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\AVX512\PacketMath.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\AVX512</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\AltiVec\Complex.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\AltiVec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\AltiVec\MathFunctions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\AltiVec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\AltiVec\PacketMath.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\AltiVec</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\CUDA\Complex.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\CUDA\Half.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\CUDA\MathFunctions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\CUDA\PacketMath.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\CUDA\PacketMathHalf.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\CUDA\TypeCasting.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\Default\ConjHelper.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\Default\Settings.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\Default</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\NEON\Complex.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\NEON</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\NEON\MathFunctions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\NEON</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\NEON\PacketMath.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\NEON</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\SSE\Complex.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\SSE</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\SSE\MathFunctions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\SSE</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\SSE\PacketMath.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\SSE</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\SSE\TypeCasting.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\SSE</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\ZVector\Complex.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\ZVector</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\ZVector\MathFunctions.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\ZVector</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\arch\ZVector\PacketMath.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\arch\ZVector</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\functors\AssignmentFunctors.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\functors</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\functors\BinaryFunctors.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\functors</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\functors\NullaryFunctors.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\functors</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\functors\StlFunctors.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\functors</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\functors\TernaryFunctors.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\functors</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\functors\UnaryFunctors.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\functors</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\GeneralBlockPanelKernel.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\GeneralMatrixMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\GeneralMatrixMatrixTriangular.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\GeneralMatrixMatrixTriangular_BLAS.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\GeneralMatrixMatrix_BLAS.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\GeneralMatrixVector.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\GeneralMatrixVector_BLAS.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\Parallelizer.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\SelfadjointMatrixMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\SelfadjointMatrixMatrix_BLAS.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\SelfadjointMatrixVector.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\SelfadjointMatrixVector_BLAS.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\SelfadjointProduct.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\SelfadjointRank2Update.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\TriangularMatrixMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\TriangularMatrixMatrix_BLAS.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\TriangularMatrixVector.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\TriangularMatrixVector_BLAS.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\TriangularSolverMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\TriangularSolverMatrix_BLAS.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\products\TriangularSolverVector.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\products</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\BlasUtil.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\Constants.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\DisableStupidWarnings.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\ForwardDeclarations.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\MKL_support.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\Macros.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\Memory.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\Meta.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\NonMPL2.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\ReenableStupidWarnings.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\StaticAssert.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Core\util\XprHelper.h">
+      <Filter>third_party\src\eigen\Eigen\src\Core\util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\ComplexEigenSolver.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\ComplexSchur.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\ComplexSchur_LAPACKE.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\EigenSolver.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\GeneralizedEigenSolver.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\GeneralizedSelfAdjointEigenSolver.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\HessenbergDecomposition.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\MatrixBaseEigenvalues.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\RealQZ.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\RealSchur.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\RealSchur_LAPACKE.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\SelfAdjointEigenSolver.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\SelfAdjointEigenSolver_LAPACKE.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Eigenvalues\Tridiagonalization.h">
+      <Filter>third_party\src\eigen\Eigen\src\Eigenvalues</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\AlignedBox.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\AngleAxis.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\EulerAngles.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\Homogeneous.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\Hyperplane.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\OrthoMethods.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\ParametrizedLine.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\Quaternion.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\Rotation2D.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\RotationBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\Scaling.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\Transform.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\Translation.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\Umeyama.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Geometry\arch\Geometry_SSE.h">
+      <Filter>third_party\src\eigen\Eigen\src\Geometry\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Householder\BlockHouseholder.h">
+      <Filter>third_party\src\eigen\Eigen\src\Householder</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Householder\Householder.h">
+      <Filter>third_party\src\eigen\Eigen\src\Householder</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Householder\HouseholderSequence.h">
+      <Filter>third_party\src\eigen\Eigen\src\Householder</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\IterativeLinearSolvers\BasicPreconditioners.h">
+      <Filter>third_party\src\eigen\Eigen\src\IterativeLinearSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\IterativeLinearSolvers\BiCGSTAB.h">
+      <Filter>third_party\src\eigen\Eigen\src\IterativeLinearSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\IterativeLinearSolvers\ConjugateGradient.h">
+      <Filter>third_party\src\eigen\Eigen\src\IterativeLinearSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\IterativeLinearSolvers\IncompleteCholesky.h">
+      <Filter>third_party\src\eigen\Eigen\src\IterativeLinearSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\IterativeLinearSolvers\IncompleteLUT.h">
+      <Filter>third_party\src\eigen\Eigen\src\IterativeLinearSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\IterativeLinearSolvers\IterativeSolverBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\IterativeLinearSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\IterativeLinearSolvers\LeastSquareConjugateGradient.h">
+      <Filter>third_party\src\eigen\Eigen\src\IterativeLinearSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\IterativeLinearSolvers\SolveWithGuess.h">
+      <Filter>third_party\src\eigen\Eigen\src\IterativeLinearSolvers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\Jacobi\Jacobi.h">
+      <Filter>third_party\src\eigen\Eigen\src\Jacobi</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\LU\Determinant.h">
+      <Filter>third_party\src\eigen\Eigen\src\LU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\LU\FullPivLU.h">
+      <Filter>third_party\src\eigen\Eigen\src\LU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\LU\InverseImpl.h">
+      <Filter>third_party\src\eigen\Eigen\src\LU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\LU\PartialPivLU.h">
+      <Filter>third_party\src\eigen\Eigen\src\LU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\LU\PartialPivLU_LAPACKE.h">
+      <Filter>third_party\src\eigen\Eigen\src\LU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\LU\arch\Inverse_SSE.h">
+      <Filter>third_party\src\eigen\Eigen\src\LU\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\MetisSupport\MetisSupport.h">
+      <Filter>third_party\src\eigen\Eigen\src\MetisSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\OrderingMethods\Amd.h">
+      <Filter>third_party\src\eigen\Eigen\src\OrderingMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\OrderingMethods\Eigen_Colamd.h">
+      <Filter>third_party\src\eigen\Eigen\src\OrderingMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\OrderingMethods\Ordering.h">
+      <Filter>third_party\src\eigen\Eigen\src\OrderingMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\PaStiXSupport\PaStiXSupport.h">
+      <Filter>third_party\src\eigen\Eigen\src\PaStiXSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\PardisoSupport\PardisoSupport.h">
+      <Filter>third_party\src\eigen\Eigen\src\PardisoSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\QR\ColPivHouseholderQR.h">
+      <Filter>third_party\src\eigen\Eigen\src\QR</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\QR\ColPivHouseholderQR_LAPACKE.h">
+      <Filter>third_party\src\eigen\Eigen\src\QR</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\QR\CompleteOrthogonalDecomposition.h">
+      <Filter>third_party\src\eigen\Eigen\src\QR</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\QR\FullPivHouseholderQR.h">
+      <Filter>third_party\src\eigen\Eigen\src\QR</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\QR\HouseholderQR.h">
+      <Filter>third_party\src\eigen\Eigen\src\QR</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\QR\HouseholderQR_LAPACKE.h">
+      <Filter>third_party\src\eigen\Eigen\src\QR</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SPQRSupport\SuiteSparseQRSupport.h">
+      <Filter>third_party\src\eigen\Eigen\src\SPQRSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SVD\BDCSVD.h">
+      <Filter>third_party\src\eigen\Eigen\src\SVD</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SVD\JacobiSVD.h">
+      <Filter>third_party\src\eigen\Eigen\src\SVD</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SVD\JacobiSVD_LAPACKE.h">
+      <Filter>third_party\src\eigen\Eigen\src\SVD</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SVD\SVDBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\SVD</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SVD\UpperBidiagonalization.h">
+      <Filter>third_party\src\eigen\Eigen\src\SVD</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCholesky\SimplicialCholesky.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCholesky</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCholesky\SimplicialCholesky_impl.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCholesky</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\AmbiVector.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\CompressedStorage.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\ConservativeSparseSparseProduct.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\MappedSparseMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseAssign.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseBlock.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseColEtree.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseCompressedBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseCwiseBinaryOp.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseCwiseUnaryOp.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseDenseProduct.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseDiagonalProduct.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseDot.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseFuzzy.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseMap.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseMatrixBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparsePermutation.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseProduct.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseRedux.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseRef.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseSelfAdjointView.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseSolverBase.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseSparseProductWithPruning.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseTranspose.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseTriangularView.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseUtil.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseVector.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\SparseView.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseCore\TriangularSolver.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseCore</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLUImpl.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_Memory.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_Structs.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_SupernodalMatrix.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_Utils.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_column_bmod.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_column_dfs.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_copy_to_ucol.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_gemm_kernel.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_heap_relax_snode.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_kernel_bmod.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_panel_bmod.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_panel_dfs.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_pivotL.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_pruneL.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseLU\SparseLU_relax_snode.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseLU</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SparseQR\SparseQR.h">
+      <Filter>third_party\src\eigen\Eigen\src\SparseQR</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\StlSupport\StdDeque.h">
+      <Filter>third_party\src\eigen\Eigen\src\StlSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\StlSupport\StdList.h">
+      <Filter>third_party\src\eigen\Eigen\src\StlSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\StlSupport\StdVector.h">
+      <Filter>third_party\src\eigen\Eigen\src\StlSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\StlSupport\details.h">
+      <Filter>third_party\src\eigen\Eigen\src\StlSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\SuperLUSupport\SuperLUSupport.h">
+      <Filter>third_party\src\eigen\Eigen\src\SuperLUSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\UmfPackSupport\UmfPackSupport.h">
+      <Filter>third_party\src\eigen\Eigen\src\UmfPackSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\misc\Image.h">
+      <Filter>third_party\src\eigen\Eigen\src\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\misc\Kernel.h">
+      <Filter>third_party\src\eigen\Eigen\src\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\misc\RealSvd2x2.h">
+      <Filter>third_party\src\eigen\Eigen\src\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\misc\blas.h">
+      <Filter>third_party\src\eigen\Eigen\src\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\misc\lapack.h">
+      <Filter>third_party\src\eigen\Eigen\src\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\misc\lapacke.h">
+      <Filter>third_party\src\eigen\Eigen\src\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\misc\lapacke_mangling.h">
+      <Filter>third_party\src\eigen\Eigen\src\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\plugins\ArrayCwiseBinaryOps.h">
+      <Filter>third_party\src\eigen\Eigen\src\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\plugins\ArrayCwiseUnaryOps.h">
+      <Filter>third_party\src\eigen\Eigen\src\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\plugins\BlockMethods.h">
+      <Filter>third_party\src\eigen\Eigen\src\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\plugins\CommonCwiseBinaryOps.h">
+      <Filter>third_party\src\eigen\Eigen\src\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\plugins\CommonCwiseUnaryOps.h">
+      <Filter>third_party\src\eigen\Eigen\src\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\plugins\MatrixCwiseBinaryOps.h">
+      <Filter>third_party\src\eigen\Eigen\src\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\eigen\Eigen\src\plugins\MatrixCwiseUnaryOps.h">
+      <Filter>third_party\src\eigen\Eigen\src\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\glad\include\glad\glad.hpp">
+      <Filter>third_party\src\glad\include\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imconfig.h">
+      <Filter>third_party\src\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui.h">
+      <Filter>third_party\src\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui_impl_glfw.h">
+      <Filter>third_party\src\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui_impl_opengl3.h">
+      <Filter>third_party\src\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imgui_internal.h">
+      <Filter>third_party\src\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imstb_rectpack.h">
+      <Filter>third_party\src\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imstb_textedit.h">
+      <Filter>third_party\src\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\imgui\imstb_truetype.h">
+      <Filter>third_party\src\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\lodepng\lodepng.h">
+      <Filter>third_party\src\lodepng</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\library\third_party\src\simplexnoise\simplexnoise1234.hpp">
+      <Filter>third_party\src\simplexnoise</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\src\structure.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes\Potentiel_cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{8FB46F94-ACFB-302D-9994-E57B29B54CCB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{D22754D9-8BF3-3CFB-953B-954723809349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src">
+      <UniqueIdentifier>{3626D7FA-0FCA-3C13-9B10-84C0AA3F9E79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen">
+      <UniqueIdentifier>{D3F5522A-383B-3BFC-B1C1-FA60861C7BD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen">
+      <UniqueIdentifier>{5438F847-2ADE-34E3-B03C-4B54B6F25EBC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src">
+      <UniqueIdentifier>{5416DF5F-AF24-3954-B957-869290EFDD1A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Cholesky">
+      <UniqueIdentifier>{C8F55E29-EBAB-3185-A185-99DF09251539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\CholmodSupport">
+      <UniqueIdentifier>{135AB20A-B675-3828-9FE5-C147F56D7238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core">
+      <UniqueIdentifier>{F720E341-3E1C-3A9C-B51E-BE94829EB3B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\arch">
+      <UniqueIdentifier>{A7FCF20B-F482-34C5-B3F3-960A94A8D641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\arch\AVX">
+      <UniqueIdentifier>{DB102AC6-3D46-354F-94D8-67A5E3A8D05F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\arch\AVX512">
+      <UniqueIdentifier>{E6CC4929-0BC3-3DD2-A080-1A8EBC05D2A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\arch\AltiVec">
+      <UniqueIdentifier>{F46790B1-3D60-30D6-9793-6CE0A57E0468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\arch\CUDA">
+      <UniqueIdentifier>{BF705D16-E7F4-3CE0-B78B-BA4C2D427AC9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\arch\Default">
+      <UniqueIdentifier>{EC1C1F8C-C9FB-34AF-BCDF-43E4121667F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\arch\NEON">
+      <UniqueIdentifier>{CFE7638A-2A3D-31C6-A56A-4EB3FA1AF1A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\arch\SSE">
+      <UniqueIdentifier>{88AC0FCF-EB80-38AC-ADE5-E1B53D05B9AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\arch\ZVector">
+      <UniqueIdentifier>{38284A27-38B8-31D7-8878-62A09D4BC35B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\functors">
+      <UniqueIdentifier>{5C60EB34-356B-3094-B4B6-93BEFAE7DEB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\products">
+      <UniqueIdentifier>{9F1FC6D0-8215-30D0-BF80-B1DDE0744B2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Core\util">
+      <UniqueIdentifier>{6FBA4D7B-D992-3BE5-998F-81FDB2CE368F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Eigenvalues">
+      <UniqueIdentifier>{988DCF3B-576E-36DD-BDD9-9657A5C7BB32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Geometry">
+      <UniqueIdentifier>{1900BCCF-26A6-3433-B726-475DE441CB38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Geometry\arch">
+      <UniqueIdentifier>{A743FEF2-8668-300A-A463-FC4D29F8C6E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Householder">
+      <UniqueIdentifier>{2D19457C-5630-3021-9C65-AA7654AF8485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\IterativeLinearSolvers">
+      <UniqueIdentifier>{CD6A3A91-7FDA-3186-A4E3-538770947D53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\Jacobi">
+      <UniqueIdentifier>{D9B03F39-C7A6-3C7A-BFC9-FFB8AD296D08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\LU">
+      <UniqueIdentifier>{3BAE9DA0-BA29-34DC-84DB-FA923C612A10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\LU\arch">
+      <UniqueIdentifier>{68107071-51DF-39C1-8EAC-0B62B3713A99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\MetisSupport">
+      <UniqueIdentifier>{D529240E-B784-307B-A3A8-76E18807BD58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\OrderingMethods">
+      <UniqueIdentifier>{80EF0638-C821-3C00-8E0C-352C444B963F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\PaStiXSupport">
+      <UniqueIdentifier>{94CCAC42-6463-3028-8954-2B7855D217B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\PardisoSupport">
+      <UniqueIdentifier>{FE85BF88-09BC-3A54-8E90-925E2AA576B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\QR">
+      <UniqueIdentifier>{01AD2005-354A-32D7-AC05-0DA2EEE5F1C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\SPQRSupport">
+      <UniqueIdentifier>{E965CF59-617B-3F59-959A-887C77F17473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\SVD">
+      <UniqueIdentifier>{F87D337C-D3DB-3583-BC7D-104B353B8CFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\SparseCholesky">
+      <UniqueIdentifier>{E9C402A1-BBF3-3130-8B8A-EA1A778EDF89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\SparseCore">
+      <UniqueIdentifier>{342751D4-5419-366E-B34E-AB8CBF7A4E99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\SparseLU">
+      <UniqueIdentifier>{5BA690B8-777D-339F-B71D-56ACB2AD8419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\SparseQR">
+      <UniqueIdentifier>{50ED842D-3C8E-39F2-BBC6-75FDFC484803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\StlSupport">
+      <UniqueIdentifier>{CE9CDB14-E5F2-37B7-B2E4-B86B525F7C67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\SuperLUSupport">
+      <UniqueIdentifier>{8C987456-AD13-3540-A8E2-1D724E8A151D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\UmfPackSupport">
+      <UniqueIdentifier>{ECD56605-7320-3BC3-B37A-B6B4236446DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\misc">
+      <UniqueIdentifier>{58BE9958-DAF7-3B98-923F-497E57BE8516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\eigen\Eigen\src\plugins">
+      <UniqueIdentifier>{F9517A9E-0C3D-3CD7-A1B5-A8597432ECD4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\glad">
+      <UniqueIdentifier>{21F79E83-32ED-32DB-A6FC-1035E2DF9612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\glad\include">
+      <UniqueIdentifier>{8D716937-B621-311F-8FD4-35B3BDE49A34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\glad\include\glad">
+      <UniqueIdentifier>{CDC7F531-C4EB-3F80-BE40-25695C1C26FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\glad\src">
+      <UniqueIdentifier>{6256487F-41DA-397B-AC9B-9938D0FFA912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\imgui">
+      <UniqueIdentifier>{FA1E7303-0DDC-3F44-844A-7A495A986CC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\lodepng">
+      <UniqueIdentifier>{FC39E274-B64C-370F-B556-78C78DCC661E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\src\simplexnoise">
+      <UniqueIdentifier>{10275BBC-EF01-30C6-A3A3-15D7720E12AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl">
+      <UniqueIdentifier>{F9ACD29A-8AEA-373A-97BB-47342CBDDE64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\base">
+      <UniqueIdentifier>{3A42B1F1-BDAF-3787-8994-3AD88588BA3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\base\basic_types">
+      <UniqueIdentifier>{B3F4A089-09A9-3FC7-8AE0-1F71A14DDC60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\base\error">
+      <UniqueIdentifier>{9FF42E3F-5973-394E-BF18-93781068CFED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\base\rand">
+      <UniqueIdentifier>{39F8125F-8881-3210-9DA7-2F34A9B7355E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\base\stl">
+      <UniqueIdentifier>{18052481-9895-3CD2-978D-51934ED47BE1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\base\string">
+      <UniqueIdentifier>{CF34324F-0451-3A64-B278-58903E4A9546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\base\types">
+      <UniqueIdentifier>{E28B79D3-1EAE-3330-9B39-C15D125DD6DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers">
+      <UniqueIdentifier>{C08D583B-DFB8-335F-A5F2-E8FE94364B76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\buffer">
+      <UniqueIdentifier>{46AC17D4-886E-3ED9-B8E6-C577D4F88547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\buffer\test">
+      <UniqueIdentifier>{087525E4-3D00-3C03-A54C-DAE269397355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\buffer_stack">
+      <UniqueIdentifier>{9CD795A8-C638-3F15-9F9E-AC0D716A67A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\buffer_stack\implementation">
+      <UniqueIdentifier>{30466901-2CFA-32EE-B618-FAC7DF220A03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\buffer_stack\special_types">
+      <UniqueIdentifier>{79F13E06-A0D9-378A-8E7F-4692123BC7D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\buffer_stack\test">
+      <UniqueIdentifier>{5B27D9B3-802E-33F7-9EB8-1868944B3203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\grid">
+      <UniqueIdentifier>{2FBF7732-78AB-36C0-85D8-BBCA18A1E94E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\grid\grid_2D">
+      <UniqueIdentifier>{6D7728BC-3313-3893-B84F-89F16F2D127E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\grid\grid_3D">
+      <UniqueIdentifier>{F71467EF-4140-36A9-8D9D-1F0797E9FBCF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\grid\test">
+      <UniqueIdentifier>{2BE763AD-0C0D-32B4-9A5A-C7419AA25701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\grid_stack">
+      <UniqueIdentifier>{4184D28B-02CE-3026-8E48-933514BFDEF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\grid_stack\grid_stack_2D">
+      <UniqueIdentifier>{7678A0A8-A0F1-3386-9CA7-F654A69C9F04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\grid_stack\grid_stack_2D\test">
+      <UniqueIdentifier>{C5DA39BC-7E16-369C-BD05-200C32A569BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\containers\offset_grid">
+      <UniqueIdentifier>{3E4C7C48-8AFC-3B7D-9ED6-8873DE8D305D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display">
+      <UniqueIdentifier>{E4E270D0-3416-3F7C-A70B-1DF16D71E68F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable">
+      <UniqueIdentifier>{EB868665-C1CD-3C8A-9A97-758CC1FAA574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\curve_drawable">
+      <UniqueIdentifier>{9AA016FB-6AC7-3C64-970A-91C75845A7F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\hierarchy_mesh_drawable">
+      <UniqueIdentifier>{FA397C58-FC7E-389D-AD45-7694910A1380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\hierarchy_mesh_drawable\hierarchy_mesh_drawable_node">
+      <UniqueIdentifier>{BCB2BEFA-AC64-3FF4-B96F-B654A4C2303E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\mesh_drawable">
+      <UniqueIdentifier>{BD01FF0B-39E3-309B-A7F2-284B3C97E951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\mesh_normal_drawable">
+      <UniqueIdentifier>{08914908-729F-3A49-8B0F-ECAFFABA3AA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\mesh_wireframe_drawable">
+      <UniqueIdentifier>{B9261C65-6427-39EE-AF2D-81CD69D06C8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\segments_drawable">
+      <UniqueIdentifier>{82463136-4BC9-385C-B833-8C43D7809542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\shading_parameters">
+      <UniqueIdentifier>{4E838A56-BCC4-3B20-A256-25085998C853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\drawable\trajectory_drawable">
+      <UniqueIdentifier>{4B55AF8F-6402-3092-9231-9DD7F743E749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\image">
+      <UniqueIdentifier>{4ED71956-771D-3655-83F1-DBF682688966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\opengl">
+      <UniqueIdentifier>{532C88C4-D8B2-3326-8517-22A21B9A71A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\opengl\debug">
+      <UniqueIdentifier>{3F7BFA14-65BC-39C1-A4FD-49A0F30640EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\opengl\glad">
+      <UniqueIdentifier>{D846C2E4-B3E6-33B8-AC21-DD7624BFD7B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\opengl\helper">
+      <UniqueIdentifier>{91B96989-9370-3DAE-A4F1-A0637A6E7B47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\opengl\shaders">
+      <UniqueIdentifier>{DF49AEA5-C31F-3CB2-9EAD-671B1528C15C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\opengl\texture">
+      <UniqueIdentifier>{6197E462-4804-3455-B30B-34BCDE8D8997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\opengl\uniform">
+      <UniqueIdentifier>{3FA4F12C-D141-3507-B0F6-0ADE09266DAA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\display\window">
+      <UniqueIdentifier>{9B91CB8F-F462-3286-B6DA-3158071D74E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\files">
+      <UniqueIdentifier>{A0DEA21F-D3DF-3A2A-A7FA-F525D84CE26A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction">
+      <UniqueIdentifier>{BD347EA9-ED9D-302B-B77D-FB24C042B562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\camera">
+      <UniqueIdentifier>{884073A8-96D1-38B1-84B4-899403ED2086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\camera\camera_around_center">
+      <UniqueIdentifier>{94A6F37B-524F-3C1C-9315-2C9BFE204214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\camera\camera_base">
+      <UniqueIdentifier>{0BF12BD1-47C9-3843-8C55-206EDBF1B3BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\camera\camera_head">
+      <UniqueIdentifier>{01F3741B-97EC-3543-8E14-195F43746CE7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\camera\camera_spherical_coordinates">
+      <UniqueIdentifier>{980E4E0B-7340-34DA-9E7B-313BA53468B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\camera\common_functions">
+      <UniqueIdentifier>{9FD58574-F519-3492-8BA8-03D34CE10E57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\glfw_interaction">
+      <UniqueIdentifier>{5D23973F-07EF-3CF2-A11F-9470D1AA2854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\gui">
+      <UniqueIdentifier>{AAFA8F20-3863-326D-A7D0-3228F3086E73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\timer">
+      <UniqueIdentifier>{F4F8E895-4A2B-3F98-9834-5423D4C07618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\timer\timer_basic">
+      <UniqueIdentifier>{D8C9AB35-645C-30E0-BB98-051D02E84900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\timer\timer_event_periodic">
+      <UniqueIdentifier>{BD4677A7-3D57-3BF3-8652-02FD4ED4CE84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\timer\timer_fps">
+      <UniqueIdentifier>{0C7E24C8-7164-361C-B4A8-1029D63A5DA4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\timer\timer_interval">
+      <UniqueIdentifier>{E4960BF1-4B45-3E23-B283-BB4B296A2B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\tracker">
+      <UniqueIdentifier>{75B3A96E-E298-3296-9E1B-FA2A92739B64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\interaction\tracker\velocity_tracker">
+      <UniqueIdentifier>{0540D426-CB7C-3C01-B188-2A1C2BE53AD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math">
+      <UniqueIdentifier>{C5A59155-BCBF-3989-A811-6C13F8D52AC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\affine">
+      <UniqueIdentifier>{A544D04C-2626-32D0-93D5-EBF82D372067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\affine\affine_rt">
+      <UniqueIdentifier>{5494412C-8CA9-3C43-B80A-4A78B49F424E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\affine\affine_rts">
+      <UniqueIdentifier>{DA6396D7-D879-3F2B-A1C7-CF4852314550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\frame">
+      <UniqueIdentifier>{FD0FEF95-3FCC-3253-9183-84A5016E5508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\interpolation">
+      <UniqueIdentifier>{CF8E5F98-FE39-3D2F-A07C-99E0C2205EAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\matrix">
+      <UniqueIdentifier>{3EC6A537-4B56-327C-9642-93B628C0AAA5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\matrix\matrix_stack">
+      <UniqueIdentifier>{E50A7E9F-F548-3AA3-A5FB-9DABCE90A211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\matrix\matrix_stack\special_types">
+      <UniqueIdentifier>{8C2A615A-4BE9-3AD2-9A0B-D25091FB0EFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\matrix\matrix_stack\special_types\definition">
+      <UniqueIdentifier>{D31317EA-43DF-3D4C-8759-9BBB0C015CAA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\matrix\matrix_stack\special_types\mat4">
+      <UniqueIdentifier>{29A7261C-4B83-3F5F-B0CF-3C515138E37B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\matrix\test">
+      <UniqueIdentifier>{FA8147DD-FF92-32B4-A5C3-E8BDCE28CE49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\projection">
+      <UniqueIdentifier>{B08D14C8-E98F-3EE2-8E7B-510965AEAF76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\quaternion">
+      <UniqueIdentifier>{9E7B5D0A-D8BE-308D-AD87-1D3F3EDD0D8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\rotation">
+      <UniqueIdentifier>{7ABAACAC-18C0-3FAC-A8D6-4494FAD0F2A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\rotation\test">
+      <UniqueIdentifier>{97ADEB8B-9626-3F59-83EA-B938282E8040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\vec_mat">
+      <UniqueIdentifier>{AA8274BE-2F1E-3559-9EA3-0C0B75EDCB39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\math\vec_mat\test">
+      <UniqueIdentifier>{5CA52D44-707B-39C2-AA38-FCAD05C23FA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shaders_preset">
+      <UniqueIdentifier>{0600EAF6-4448-3E43-BEBE-2374D5020664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shape">
+      <UniqueIdentifier>{0330FF68-3AB2-347D-9468-F386D1D73FD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shape\curve">
+      <UniqueIdentifier>{AB4C54A1-4C83-30E3-A6CD-13C6AF05F97A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shape\intersection">
+      <UniqueIdentifier>{98B70F70-A290-3319-A5BC-BB517C68203A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shape\mesh">
+      <UniqueIdentifier>{0A26BDCC-4839-316B-8468-8CC152D4460C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shape\mesh\loader">
+      <UniqueIdentifier>{779DEF56-B32B-371C-BD99-FF05CDB4689D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shape\mesh\loader\obj">
+      <UniqueIdentifier>{7431FE02-4337-3FA8-B254-2EC40573FE19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shape\mesh\primitive">
+      <UniqueIdentifier>{E7914A70-68ED-3C16-8B49-B3AD2EFFD7CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shape\mesh\structure">
+      <UniqueIdentifier>{30EA238D-4E45-34CF-A6A3-0769D814A3F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vcl\shape\noise">
+      <UniqueIdentifier>{97BB6F35-5ED1-3AEC-9068-E1BDCFC4E3A1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

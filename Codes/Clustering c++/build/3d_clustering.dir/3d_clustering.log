@@ -1,9 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(504,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(505,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  interpolation.cpp
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\interpolation.cpp(45,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\interpolation.cpp(59,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\interpolation.cpp(94,18): warning C4389: '==': signed/unsigned mismatch
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\interpolation.cpp(113,18): warning C4389: '==': signed/unsigned mismatch
-C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\src\interpolation.cpp(119,18): warning C4389: '==': signed/unsigned mismatch
-  3d_clustering.vcxproj -> C:\Users\Louis Proffit\OneDrive\Git\PSC\Codes Java\3d_clustering\3d_clustering.exe
